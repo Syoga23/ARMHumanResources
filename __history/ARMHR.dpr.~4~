@@ -1,0 +1,20 @@
+program ARMHR;
+
+uses
+  Vcl.Forms,
+  EnterUnit in 'EnterUnit.pas' {Form1},
+  Vcl.Themes,
+  Vcl.Styles,
+  BGunit in 'BGunit.pas' {BackData: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Carbon');
+  Application.Title := 'Default';
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TBackData, BackData);
+  Application.Run;
+end.

@@ -2,17 +2,20 @@ program ARMHR;
 
 uses
   Vcl.Forms,
-  Unit1 in 'Unit1.pas' {Form1},
+  ConnectUnit in 'ConnectUnit.pas' {ConnectForm},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  BGunit in 'BGunit.pas' {BackData: TDataModule},
+  MainUnit in 'MainUnit.pas' {MainForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  TStyleManager.TrySetStyle('Ruby Graphite');
+  TStyleManager.TrySetStyle('Carbon');
   Application.Title := 'Default';
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TMainForm, MainForm);
+  Application.CreateForm(TBackData, BackData);
   Application.Run;
 end.
