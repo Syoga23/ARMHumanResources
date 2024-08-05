@@ -1,7 +1,7 @@
 object ConnectForm: TConnectForm
   Left = 0
   Top = 0
-  BorderStyle = bsDialog
+  BorderStyle = bsSingle
   Caption = #1040#1088#1084' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1087#1086#1076#1082#1083#1102#1095#1077#1085#1080#1077
   ClientHeight = 157
   ClientWidth = 490
@@ -12,73 +12,36 @@ object ConnectForm: TConnectForm
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poScreenCenter
+  OnShow = FormShow
   TextHeight = 15
   object PageControl1: TPageControl
     Left = 0
     Top = 0
     Width = 490
     Height = 157
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Align = alClient
+    MultiLine = True
     TabOrder = 0
-    ExplicitWidth = 494
-    ExplicitHeight = 144
     object TabSheet1: TTabSheet
       Caption = #1055#1086#1076#1082#1083#1102#1095#1080#1090#1100#1089#1103' '#1082' '#1089#1077#1088#1074#1077#1088#1091
-      object Label1: TLabel
+      object ServerName: TEdit
         Left = 16
-        Top = 86
-        Width = 24
-        Height = 15
-        Caption = 'Wait'
-        Color = clWhite
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clWhite
-        Font.Height = -12
-        Font.Name = 'Segoe UI'
-        Font.Style = []
-        ParentColor = False
-        ParentFont = False
-      end
-      object ProgressBar1: TProgressBar
-        Left = 16
-        Top = 84
-        Width = 369
-        Height = 25
-        DoubleBuffered = False
-        ParentDoubleBuffered = False
-        ParentShowHint = False
-        Smooth = True
-        MarqueeInterval = 0
-        Step = 1
-        ShowHint = False
-        TabOrder = 3
-        StyleName = 'Carbon'
-      end
-      object Edit1: TEdit
-        Left = 16
-        Top = 29
+        Top = 45
         Width = 369
         Height = 30
         AutoSize = False
         TabOrder = 0
-        TextHint = 'PC/SQLSERVER2008'
+        TextHint = 'PC\SQLSERVER2008'
       end
-      object Button2: TButton
+      object NextButton: TButton
         Left = 391
-        Top = 29
-        Width = 82
+        Top = 45
+        Width = 81
         Height = 30
-        Caption = #1054#1073#1079#1086#1088
+        Caption = #1044#1072#1083#1077#1077
         TabOrder = 1
-      end
-      object Button1: TButton
-        Left = 391
-        Top = 84
-        Width = 82
-        Height = 25
-        Caption = #1055#1088#1086#1074#1077#1088#1080#1090#1100
-        TabOrder = 2
+        OnClick = NextButtonClick
       end
     end
     object TabSheet2: TTabSheet
@@ -362,7 +325,7 @@ object ConnectForm: TConnectForm
           000000000000}
         Stretch = True
       end
-      object Edit2: TEdit
+      object Username: TEdit
         Left = 67
         Top = 16
         Width = 400
@@ -371,7 +334,7 @@ object ConnectForm: TConnectForm
         TabOrder = 0
         TextHint = #1048#1084#1103' '#1087#1086#1083#1100#1079#1086#1074#1072#1090#1077#1083#1103
       end
-      object Edit3: TEdit
+      object Password: TEdit
         Left = 67
         Top = 52
         Width = 400
@@ -383,13 +346,23 @@ object ConnectForm: TConnectForm
         TabOrder = 1
         TextHint = #1055#1072#1088#1086#1083#1100
       end
-      object Button3: TButton
-        Left = 212
-        Top = 88
+      object LoginButton: TButton
+        Left = 250
+        Top = 93
         Width = 75
         Height = 25
         Caption = #1051#1086#1075#1080#1085
         TabOrder = 2
+        OnClick = LoginButtonClick
+      end
+      object BackButton: TButton
+        Left = 170
+        Top = 93
+        Width = 75
+        Height = 25
+        Caption = #1053#1072#1079#1072#1076
+        TabOrder = 3
+        OnClick = BackButtonClick
       end
     end
   end

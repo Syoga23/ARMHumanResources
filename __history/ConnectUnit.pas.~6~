@@ -1,0 +1,74 @@
+unit ConnectUnit;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
+
+
+  Vcl.Graphics,
+  Vcl.Themes, Vcl.Menus, Vcl.Tabs, Vcl.DockTabSet, Vcl.ComCtrls, Vcl.ExtCtrls,
+  acPNG;
+
+type
+  TConnectForm = class(TForm)
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    ServerName: TEdit;
+    Button2: TButton;
+    Edit2: TEdit;
+    Button1: TButton;
+    ProgressBar1: TProgressBar;
+    Label1: TLabel;
+    Edit3: TEdit;
+    Button3: TButton;
+    Image1: TImage;
+    Image2: TImage;
+    procedure Button2Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+
+  public
+    closeVar:integer;
+  end;
+
+var
+  ConnectForm: TConnectForm;
+
+implementation
+
+{$R *.dfm}
+
+uses BGunit, MainUnit;
+
+procedure Launch;
+  const tempstr='Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BankomatsRemont;Data Source=';
+begin
+  BackData.Connection.ConnectionString := tempstr + ConnectForm.ServerName.Text;
+  try
+  BackData.Connection.Open;
+  MessageDlg('Соединение успешно!', mtInformation, [mbOk], 0);
+  ConnectForm.closeVar := 1;
+  ConnectForm.close;
+  BackData.Ini.WriteString('connection','connectionstring', ''+ConnectForm.ServerName.Text);
+  BackData.Ini.Free
+  Except on E:Exception do
+    MessageDlg('Вы неправильно ввели connectionstring или у вас нет такого сервера:'+ E.Message, mtError, [mbOk], 0)
+
+  end;
+end;
+
+procedure TConnectForm.Button2Click(Sender: TObject);
+begin
+Launch();
+end;
+
+
+procedure TConnectForm.FormShow(Sender: TObject);
+begin
+ServerName.Text:= BackData.Ini.ReadString('connection','connectionstring', '');
+end;
+
+end.

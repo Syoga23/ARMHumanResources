@@ -16,16 +16,18 @@ type
     PageControl1: TPageControl;
     TabSheet1: TTabSheet;
     TabSheet2: TTabSheet;
-    Edit1: TEdit;
-    Button2: TButton;
-    Edit2: TEdit;
-    Button1: TButton;
-    ProgressBar1: TProgressBar;
-    Label1: TLabel;
-    Edit3: TEdit;
-    Button3: TButton;
+    ServerName: TEdit;
+    Username: TEdit;
+    Password: TEdit;
+    LoginButton: TButton;
     Image1: TImage;
     Image2: TImage;
+    NextButton: TButton;
+    BackButton: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure NextButtonClick(Sender: TObject);
+    procedure LoginButtonClick(Sender: TObject);
+    procedure BackButtonClick(Sender: TObject);
   private
 
   public
@@ -40,5 +42,46 @@ implementation
 {$R *.dfm}
 
 uses BGunit, MainUnit;
+
+procedure Launch;
+begin
+  BackData.Connection.ConnectionString := 'Provider=SQLOLEDB.1;Password=' + ConnectForm.Password.Text + ';Persist Security Info=True;User ID=' + ConnectForm.Username.Text +
+  ';Initial Catalog=HumanResources;Data Source=' + ConnectForm.ServerName.Text;
+  try
+  BackData.Connection.Open;
+  MessageDlg('Соединение успешно!', mtInformation, [mbOk], 0);
+  ConnectForm.closeVar := 1;
+  ConnectForm.close;
+  BackData.Ini.WriteString('connection','connectionstring', ''+ConnectForm.ServerName.Text);
+  BackData.Ini.WriteString('connection','username', ''+ConnectForm.Username.Text);
+  BackData.Ini.Free
+  Except on E:Exception do
+    MessageDlg('Ошибка подключения к БД:'+ E.Message, mtError, [mbOk], 0)
+
+  end;
+end;
+
+procedure TConnectForm.LoginButtonClick(Sender: TObject);
+begin
+Launch();
+end;
+
+
+procedure TConnectForm.BackButtonClick(Sender: TObject);
+begin
+PageControl1.TabIndex:=0;
+end;
+
+procedure TConnectForm.FormShow(Sender: TObject);
+begin
+ServerName.Text:= BackData.Ini.ReadString('connection','connectionstring', '');
+Username.Text := BackData.Ini.ReadString('connection','username', '');
+PageControl1.TabIndex:=0;
+end;
+
+procedure TConnectForm.NextButtonClick(Sender: TObject);
+begin
+PageControl1.TabIndex:=1;
+end;
 
 end.
