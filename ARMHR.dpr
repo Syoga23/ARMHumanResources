@@ -13,6 +13,7 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Carbon');
   Application.CreateForm(TBackData, BackData);
   Application.CreateForm(TMainForm, MainForm);
   Application.Run;

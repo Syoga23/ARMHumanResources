@@ -19,7 +19,7 @@ object ConnectForm: TConnectForm
     Top = 0
     Width = 490
     Height = 157
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     Align = alClient
     MultiLine = True
     TabOrder = 0
@@ -35,6 +35,7 @@ object ConnectForm: TConnectForm
         AutoSize = False
         TabOrder = 0
         TextHint = 'PC\SQLSERVER2008'
+        OnKeyPress = ServerNameKeyPress
       end
       object NextButton: TButton
         Left = 391
@@ -347,6 +348,7 @@ object ConnectForm: TConnectForm
         ShowHint = False
         TabOrder = 1
         TextHint = #1055#1072#1088#1086#1083#1100
+        OnKeyPress = PasswordKeyPress
       end
       object LoginButton: TButton
         Left = 250
@@ -367,5 +369,11 @@ object ConnectForm: TConnectForm
         OnClick = BackButtonClick
       end
     end
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 316
+    Top = 2
   end
 end

@@ -1,0 +1,73 @@
+unit MainUnit;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.StdCtrls,
+
+  Vcl.Themes,
+  Vcl.Styles, Vcl.ToolWin, Vcl.ButtonGroup;
+
+type
+  TMainForm = class(TForm)
+    ButtonGroup1: TButtonGroup;
+    Timer1: TTimer;
+    Sidebar: TPanel;
+    procedure FormShow(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure ButtonGroup1MouseEnter(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure ButtonGroup1MouseLeave(Sender: TObject);
+  private
+    Sidebarstate: boolean;
+    const MaxWidth = 300;
+    const MinWidth = 40;
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  MainForm: TMainForm;
+  closeVar: integer;
+
+implementation
+
+{$R *.dfm}
+
+uses BGunit, ConnectUnit;
+
+procedure TMainForm.ButtonGroup1MouseEnter(Sender: TObject);
+begin
+  Sidebarstate := true;
+end;
+
+procedure TMainForm.ButtonGroup1MouseLeave(Sender: TObject);
+begin
+  Sidebarstate := false;
+end;
+
+procedure TMainForm.FormCreate(Sender: TObject);
+begin
+  TStyleManager.TrySetStyle(BackData.Ini.ReadString('User_Interface','Style','Windows'));
+end;
+
+procedure TMainForm.FormShow(Sender: TObject);
+begin
+ ConnectForm:= TConnectForm.Create(Self);
+ ConnectForm.ShowModal;
+ closeVar:=ConnectForm.closeVar;
+ if(closeVar = 0) then Application.Terminate;
+end;
+
+
+procedure TMainForm.Timer1Timer(Sender: TObject);
+begin
+  if (Sidebarstate = true)and(Sidebar.Width < MaxWidth)
+    then Sidebar.Width:=Sidebar.Width + 1;
+  if (Sidebarstate = false)and(Sidebar.Width > MinWidth)
+    then Sidebar.Width:=Sidebar.Width -1;
+end;
+
+end.
