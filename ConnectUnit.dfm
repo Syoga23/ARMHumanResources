@@ -2,7 +2,7 @@ object ConnectForm: TConnectForm
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = #1040#1088#1084' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1087#1086#1076#1082#1083#1102#1095#1077#1085#1080#1077
+  Caption = #1040#1056#1052' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1087#1086#1076#1082#1083#1102#1095#1077#1085#1080#1077
   ClientHeight = 157
   ClientWidth = 490
   Color = clBtnFace
@@ -23,6 +23,8 @@ object ConnectForm: TConnectForm
     Align = alClient
     MultiLine = True
     TabOrder = 0
+    ExplicitWidth = 484
+    ExplicitHeight = 151
     object TabSheet1: TTabSheet
       Caption = #1055#1086#1076#1082#1083#1102#1095#1080#1090#1100#1089#1103' '#1082' '#1089#1077#1088#1074#1077#1088#1091
       object ServerName: TEdit

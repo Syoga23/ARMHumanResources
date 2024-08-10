@@ -4,11 +4,16 @@ interface
 
 uses
   System.SysUtils, System.Classes, Vcl.Dialogs, Data.DB, Data.Win.ADODB, IniFiles,
-  VCL.Forms;
+  VCL.Forms, Vcl.Menus, System.Actions, Vcl.ActnList,
+  Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan;
 
 type
   TBackData = class(TDataModule)
     Connection: TADOConnection;
+    MainMenu: TMainMenu;
+    j1: TMenuItem;
+    N1: TMenuItem;
+    N2: TMenuItem;
     procedure ConnectionConnectComplete(Connection: TADOConnection;
       const Error: Error; var EventStatus: TEventStatus);
     procedure DataModuleCreate(Sender: TObject);
@@ -34,18 +39,29 @@ procedure SetIniDefaults;
  Var IniLocal: TiniFile;
      ConfigPath: String;
 begin
+try
 ConfigPath:= ExtractFileDir(Application.ExeName) + '\config.ini';
 IniLocal := TIniFile.Create(ConfigPath);
-IniLocal.writeString('connection','connectionstring','');
-  // other defaults
+IniLocal.writeString('Connection','Connection_string','');
+IniLocal.writeString('Connection','Username','');
+IniLocal.writeString('User_Interface','Style','Windows');
 IniLocal.Free
+  // other defaults
+except on E:Exception do
+    MessageDlg('Ошибка создания файла конфигураций: '+ E.Message, mtError, [mbOk], 0)
+end;
+
 end;
 
 procedure TBackData.DataModuleCreate(Sender: TObject);
   var ConfigPath:String;
 begin
+  try
     ConfigPath:= ExtractFileDir(Application.ExeName) + '\config.ini';
     Ini := TIniFile.Create(ConfigPath);
+  except on E:Exception do
+    MessageDlg('Ошибка создания конфигурации: '+ E.Message, mtError, [mbOk], 0)
+  end;
 if (Not FileExists(ConfigPath)) then
     begin
         SetIniDefaults;

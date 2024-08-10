@@ -7,8 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
 
 
-  Vcl.Graphics,
-  Vcl.Themes, Vcl.Menus, Vcl.Tabs, Vcl.DockTabSet, Vcl.ComCtrls, Vcl.ExtCtrls,
+  Vcl.Graphics, Vcl.Menus, Vcl.Tabs, Vcl.DockTabSet, Vcl.ComCtrls, Vcl.ExtCtrls,
   acPNG;
 
 type
@@ -52,11 +51,11 @@ begin
   MessageDlg('Соединение успешно!', mtInformation, [mbOk], 0);
   ConnectForm.closeVar := 1;
   ConnectForm.close;
-  BackData.Ini.WriteString('connection','connectionstring', ''+ConnectForm.ServerName.Text);
-  BackData.Ini.WriteString('connection','username', ''+ConnectForm.Username.Text);
+  BackData.Ini.WriteString('Connection','Connection_string', ''+ConnectForm.ServerName.Text);
+  BackData.Ini.WriteString('Connection','Username', ''+ConnectForm.Username.Text);
   BackData.Ini.Free
   Except on E:Exception do
-    MessageDlg('Ошибка подключения к БД:'+ E.Message, mtError, [mbOk], 0)
+    MessageDlg('Ошибка подключения к БД: '+ E.Message, mtError, [mbOk], 0);
 
   end;
 end;
@@ -74,9 +73,14 @@ end;
 
 procedure TConnectForm.FormShow(Sender: TObject);
 begin
-ServerName.Text:= BackData.Ini.ReadString('connection','connectionstring', '');
-Username.Text := BackData.Ini.ReadString('connection','username', '');
+try
+ServerName.Text:= BackData.Ini.ReadString('Connection','Connection_string', '');
+Username.Text := BackData.Ini.ReadString('Connection','Username', '');
 PageControl1.TabIndex:=0;
+except on E:exception do
+  MessageDlg('Error:'+ E.Message, mtError, [mbOk], 0)
+  end;
+
 end;
 
 procedure TConnectForm.NextButtonClick(Sender: TObject);
