@@ -1,11 +1,12 @@
 object BackData: TBackData
   OnCreate = DataModuleCreate
-  Height = 480
-  Width = 640
+  Height = 535
+  Width = 1098
   object Connection: TADOConnection
-    Provider = 'SQLOLEDB.1'
+    LoginPrompt = False
+    Provider = 'SQLOLEDB'
     OnConnectComplete = ConnectionConnectComplete
-    Left = 104
+    Left = 112
     Top = 16
   end
   object MainMenu: TMainMenu
@@ -89,5 +90,134 @@ object BackData: TBackData
     object j1: TMenuItem
       Caption = #1054' '#1085#1072#1089
     end
+  end
+  object ADOQuery1: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 16
+  end
+  object ADOQuery2: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 72
+  end
+  object ADOQuery3: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 128
+  end
+  object ADOQuery4: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 184
+  end
+  object ADOQuery5: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 240
+  end
+  object ADOQuery6: TADOQuery
+    Parameters = <>
+    Left = 200
+    Top = 296
+  end
+  object ADOQuery7: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 16
+  end
+  object ADOQuery8: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 72
+  end
+  object ADOQuery9: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 128
+  end
+  object ADOQuery10: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 184
+  end
+  object ADOQuery11: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 240
+  end
+  object ADOQuery12: TADOQuery
+    Parameters = <>
+    Left = 360
+    Top = 296
+  end
+  object DataSource1: TDataSource
+    Left = 280
+    Top = 16
+  end
+  object DataSource2: TDataSource
+    Left = 280
+    Top = 72
+  end
+  object DataSource3: TDataSource
+    Left = 280
+    Top = 128
+  end
+  object DataSource4: TDataSource
+    Left = 280
+    Top = 184
+  end
+  object DataSource5: TDataSource
+    Left = 280
+    Top = 240
+  end
+  object DataSource6: TDataSource
+    Left = 280
+    Top = 296
+  end
+  object DataSource7: TDataSource
+    Left = 440
+    Top = 16
+  end
+  object DataSource8: TDataSource
+    Left = 440
+    Top = 72
+  end
+  object DataSource9: TDataSource
+    Left = 440
+    Top = 128
+  end
+  object DataSource10: TDataSource
+    Left = 440
+    Top = 184
+  end
+  object DataSource11: TDataSource
+    Left = 440
+    Top = 240
+  end
+  object DataSource12: TDataSource
+    Left = 440
+    Top = 296
+  end
+  object ADOQuery13: TADOQuery
+    Parameters = <>
+    Left = 520
+    Top = 16
+  end
+  object DataSource13: TDataSource
+    Left = 600
+    Top = 16
+  end
+  object RefReviewer: TADOQuery
+    Connection = Connection
+    DataSource = DataSource1
+    Parameters = <>
+    Left = 24
+    Top = 72
+  end
+  object RefReviewerSource: TDataSource
+    DataSet = RefReviewer
+    Left = 112
+    Top = 72
   end
 end

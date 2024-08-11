@@ -37,13 +37,49 @@ type
     N23: TMenuItem;
     N24: TMenuItem;
     N25: TMenuItem;
+    ADOQuery1: TADOQuery;
+    ADOQuery2: TADOQuery;
+    ADOQuery3: TADOQuery;
+    ADOQuery4: TADOQuery;
+    ADOQuery5: TADOQuery;
+    ADOQuery6: TADOQuery;
+    ADOQuery7: TADOQuery;
+    ADOQuery8: TADOQuery;
+    ADOQuery9: TADOQuery;
+    ADOQuery10: TADOQuery;
+    ADOQuery11: TADOQuery;
+    ADOQuery12: TADOQuery;
+    DataSource1: TDataSource;
+    DataSource2: TDataSource;
+    DataSource3: TDataSource;
+    DataSource4: TDataSource;
+    DataSource5: TDataSource;
+    DataSource6: TDataSource;
+    DataSource7: TDataSource;
+    DataSource8: TDataSource;
+    DataSource9: TDataSource;
+    DataSource10: TDataSource;
+    DataSource11: TDataSource;
+    DataSource12: TDataSource;
+    ADOQuery13: TADOQuery;
+    DataSource13: TDataSource;
+    RefReviewer: TADOQuery;
+    RefReviewerSource: TDataSource;
     procedure ConnectionConnectComplete(Connection: TADOConnection;
       const Error: Error; var EventStatus: TEventStatus);
     procedure DataModuleCreate(Sender: TObject);
   private
+
     { Private declarations }
   public
     Ini:TIniFile;
+
+    const TableNames : array[0..9] of string =
+    (
+      'JOBS', 'Salaries', 'SickDays', 'DEPARTMENTS', 'LOCATIONS',
+      'COUNTRIES', 'REGIONS', 'Events', 'DayType', 'Vacations'
+    );
+
     { Public declarations }
   end;
 
@@ -57,6 +93,7 @@ implementation
 uses ConnectUnit, MainUnit;
 
 {$R *.dfm}
+
 
 procedure SetIniDefaults;
  Var IniLocal: TiniFile;
@@ -95,8 +132,20 @@ end;
 
 procedure TBackData.ConnectionConnectComplete(Connection: TADOConnection;
   const Error: Error; var EventStatus: TEventStatus);
+  var i:integer;
 begin
-//lol
+
+  MainForm.DBTablesBox.Items.Clear;
+
+  for i := 0 to 9 do
+    begin
+      MainForm.DBTablesBox.Items.Add(TableNames[i]);
+    end;
+  MainForm.DBTablesBox.ItemIndex:=0;
+
+
+
+
 end;
 
 

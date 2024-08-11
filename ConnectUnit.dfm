@@ -371,9 +371,15 @@ object ConnectForm: TConnectForm
     end
   end
   object Timer1: TTimer
-    Interval = 500
+    Interval = 1
     OnTimer = Timer1Timer
     Left = 316
     Top = 2
+  end
+  object ApplicationEvents1: TApplicationEvents
+    OnActivate = ApplicationEvents1Activate
+    OnDeactivate = ApplicationEvents1Deactivate
+    Left = 372
+    Top = 90
   end
 end

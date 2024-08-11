@@ -6,9 +6,10 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,
 
-
   Vcl.Graphics, Vcl.Menus, Vcl.Tabs, Vcl.DockTabSet, Vcl.ComCtrls, Vcl.ExtCtrls,
-  acPNG;
+  acPNG, Vcl.AppEvnts,
+
+  BGunit, MainUnit;
 
 type
   TConnectForm = class(TForm)
@@ -24,6 +25,7 @@ type
     NextButton: TButton;
     BackButton: TButton;
     Timer1: TTimer;
+    ApplicationEvents1: TApplicationEvents;
     procedure FormShow(Sender: TObject);
     procedure NextButtonClick(Sender: TObject);
     procedure LoginButtonClick(Sender: TObject);
@@ -31,8 +33,11 @@ type
     procedure PasswordKeyPress(Sender: TObject; var Key: Char);
     procedure ServerNameKeyPress(Sender: TObject; var Key: Char);
     procedure Timer1Timer(Sender: TObject);
+    procedure ApplicationEvents1Deactivate(Sender: TObject);
+    procedure ApplicationEvents1Activate(Sender: TObject);
   private
-
+    FormActive: boolean;
+    procedure CreateParams(var Params: TCreateParams); override;
   public
     closeVar:integer;
   end;
@@ -44,7 +49,11 @@ implementation
 
 {$R *.dfm}
 
-uses BGunit, MainUnit;
+procedure TConnectForm.CreateParams(var Params: TCreateParams);
+begin
+  inherited;
+  Params.ExStyle := Params.ExStyle or WS_EX_APPWINDOW;
+end;
 
 //-----------------------------------------------------------------------
 // DELETE THIS BEFORE RELEASE
@@ -96,10 +105,20 @@ begin
 Launch();
 end;
 
+procedure TConnectForm.ApplicationEvents1Activate(Sender: TObject);
+begin
+FormActive := true;
+end;
+
+procedure TConnectForm.ApplicationEvents1Deactivate(Sender: TObject);
+begin
+FormActive := false;
+//Messagedlg('FALSE', mtInformation, [mbok], 0);
+end;
 
 procedure TConnectForm.BackButtonClick(Sender: TObject);
 begin
-PageControl1.TabIndex:=0;
+PageControl1.ActivePageIndex := 0;
 end;
 
 procedure TConnectForm.FormShow(Sender: TObject);
@@ -116,10 +135,8 @@ end;
 
 procedure TConnectForm.NextButtonClick(Sender: TObject);
 begin
-PageControl1.TabIndex:=1;
+PageControl1.ActivePageIndex := 1;
 end;
-
-
 
 procedure TConnectForm.PasswordKeyPress(Sender: TObject; var Key: Char);
 begin
@@ -135,8 +152,16 @@ end;
 
 procedure TConnectForm.Timer1Timer(Sender: TObject);
 begin
-  if GetAsyncKeyState(VK_RETURN) <> 0
-    then FastLaunch();
+
+  if FormActive then begin
+
+    if GetAsyncKeyState(VK_RETURN) <> 0
+      then begin
+      timer1.Enabled := false;
+      FastLaunch();
+      end;
+  end;
+
 end;
 
 end.
