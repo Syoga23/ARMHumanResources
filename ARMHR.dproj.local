@@ -2,19 +2,24 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.520,=C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.789,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.347,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ConnectUnit.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.148,C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ARMHR.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.789,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.215,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\CalendarSyoga.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.330,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\CalendarSyoga.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.347,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ConnectUnit.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.107,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\MainUnit.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.103,C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.697,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.789,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.107,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\MainUnit.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.103,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.dfm=C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.103,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas=C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.347,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ConnectUnit.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.148,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ARMHR.dproj=C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.347,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\ConnectUnit.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.845,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.107,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\MainUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.628,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.662,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.825,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.103,C:\Users\Syoga\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.789,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\EnterUnit.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.107,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\MainUnit.pas=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.565,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.845,=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.422,C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.dfm=C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\Unit2.dfm</Transaction>
   </Transactions>
 </BorlandProject>

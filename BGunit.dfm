@@ -3,9 +3,13 @@ object BackData: TBackData
   Height = 535
   Width = 1098
   object Connection: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=SQLOLEDB.1;Password=Head200360;Persist Security Info=Tr' +
+      'ue;User ID=Admin238;Initial Catalog=HumanResources;Data Source=S' +
+      'ERGEIPC\SQLSERVER2008'
     LoginPrompt = False
-    Provider = 'SQLOLEDB'
-    OnConnectComplete = ConnectionConnectComplete
+    Provider = 'SQLOLEDB.1'
     Left = 112
     Top = 16
   end
@@ -91,133 +95,289 @@ object BackData: TBackData
       Caption = #1054' '#1085#1072#1089
     end
   end
-  object ADOQuery1: TADOQuery
+  object EmployeesSQL: TADOQuery
+    Active = True
+    Connection = Connection
+    CursorType = ctStatic
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM EMPLOYEES')
+    Left = 208
     Top = 16
   end
-  object ADOQuery2: TADOQuery
+  object DepartmentSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 208
     Top = 72
   end
-  object ADOQuery3: TADOQuery
+  object LocationsSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 208
     Top = 128
   end
-  object ADOQuery4: TADOQuery
+  object CountrySQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 208
     Top = 184
   end
-  object ADOQuery5: TADOQuery
+  object RegionsSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 208
     Top = 240
   end
-  object ADOQuery6: TADOQuery
+  object PassportSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 200
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 208
     Top = 296
   end
-  object ADOQuery7: TADOQuery
+  object JobHistorySQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 360
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
     Top = 16
   end
-  object ADOQuery8: TADOQuery
+  object JobsSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 360
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
     Top = 72
   end
-  object ADOQuery9: TADOQuery
+  object SalariesSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 360
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
     Top = 128
   end
-  object ADOQuery10: TADOQuery
+  object MilitaryServiceSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 360
-    Top = 184
-  end
-  object ADOQuery11: TADOQuery
-    Parameters = <>
-    Left = 360
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
     Top = 240
   end
-  object ADOQuery12: TADOQuery
+  object MilitaryRanksSQL: TADOQuery
+    Connection = Connection
     Parameters = <>
-    Left = 360
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
     Top = 296
   end
-  object DataSource1: TDataSource
-    Left = 280
+  object CategoryReserveSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
     Top = 16
   end
-  object DataSource2: TDataSource
-    Left = 280
+  object EmployeesSrc: TDataSource
+    DataSet = EmployeesSQL
+    Left = 296
+    Top = 16
+  end
+  object DepartmentSRC: TDataSource
+    DataSet = DepartmentSQL
+    Left = 296
     Top = 72
   end
-  object DataSource3: TDataSource
-    Left = 280
+  object LocationsSRC: TDataSource
+    DataSet = LocationsSQL
+    Left = 296
     Top = 128
   end
-  object DataSource4: TDataSource
-    Left = 280
+  object CountrySRC: TDataSource
+    DataSet = CountrySQL
+    Left = 296
     Top = 184
   end
-  object DataSource5: TDataSource
-    Left = 280
+  object RegionsSRC: TDataSource
+    DataSet = RegionsSQL
+    Left = 296
     Top = 240
   end
-  object DataSource6: TDataSource
-    Left = 280
+  object PassportSRC: TDataSource
+    DataSet = PassportSQL
+    Left = 296
     Top = 296
   end
-  object DataSource7: TDataSource
-    Left = 440
+  object JobHistorySRC: TDataSource
+    DataSet = JobHistorySQL
+    Left = 504
     Top = 16
   end
-  object DataSource8: TDataSource
-    Left = 440
+  object JobsSRC: TDataSource
+    DataSet = JobsSQL
+    Left = 504
     Top = 72
   end
-  object DataSource9: TDataSource
-    Left = 440
+  object SalariesSRC: TDataSource
+    DataSet = SalariesSQL
+    Left = 504
     Top = 128
   end
-  object DataSource10: TDataSource
-    Left = 440
-    Top = 184
-  end
-  object DataSource11: TDataSource
-    Left = 440
+  object MilitaryServiceSRC: TDataSource
+    DataSet = MilitaryServiceSQL
+    Left = 504
     Top = 240
   end
-  object DataSource12: TDataSource
-    Left = 440
+  object MilitaryRanksSRC: TDataSource
+    DataSet = MilitaryRanksSQL
+    Left = 504
     Top = 296
   end
-  object ADOQuery13: TADOQuery
-    Parameters = <>
-    Left = 520
+  object CategoryReserveSRC: TDataSource
+    DataSet = CategoryReserveSQL
+    Left = 720
     Top = 16
   end
-  object DataSource13: TDataSource
-    Left = 600
-    Top = 16
+  object FamilySQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
+    Top = 72
+  end
+  object FamilySRC: TDataSource
+    DataSet = FamilySQL
+    Left = 720
+    Top = 72
   end
   object RefReviewer: TADOQuery
     Connection = Connection
-    DataSource = DataSource1
     Parameters = <>
     Left = 24
     Top = 72
   end
-  object RefReviewerSource: TDataSource
+  object RefReviewerSRC: TDataSource
     DataSet = RefReviewer
     Left = 112
     Top = 72
+  end
+  object CompanySQL: TADOQuery
+    Connection = Connection
+    DataSource = EmployeesSrc
+    Parameters = <>
+    Left = 24
+    Top = 128
+  end
+  object CompanySRC: TDataSource
+    DataSet = CompanySQL
+    Left = 112
+    Top = 128
+  end
+  object RelationsSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
+    Top = 128
+  end
+  object RelationsSRC: TDataSource
+    DataSet = RelationsSQL
+    Left = 720
+    Top = 128
+  end
+  object MarrStatusSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
+    Top = 184
+  end
+  object MarrStatusSRC: TDataSource
+    DataSet = MarrStatusSQL
+    Left = 720
+    Top = 184
+  end
+  object VacationsSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
+    Top = 240
+  end
+  object VacationsSRC: TDataSource
+    DataSet = VacationsSQL
+    Left = 720
+    Top = 240
+  end
+  object WorkCalendarSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 608
+    Top = 296
+  end
+  object WorkCalendarSRC: TDataSource
+    DataSet = WorkCalendarSQL
+    Left = 720
+    Top = 296
+  end
+  object DayTypeSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 816
+    Top = 72
+  end
+  object DayTypeSRC: TDataSource
+    DataSet = DayTypeSQL
+    Left = 928
+    Top = 72
+  end
+  object EventsSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 816
+    Top = 16
+  end
+  object EventsSRC: TDataSource
+    DataSet = EventsSQL
+    Left = 928
+    Top = 16
+  end
+  object SickDaysSQL: TADOQuery
+    Connection = Connection
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM')
+    Left = 392
+    Top = 184
+  end
+  object SickDaysSRC: TDataSource
+    DataSet = SickDaysSQL
+    Left = 504
+    Top = 184
   end
 end

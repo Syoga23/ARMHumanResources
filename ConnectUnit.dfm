@@ -1,7 +1,7 @@
 object ConnectForm: TConnectForm
   Left = 0
   Top = 0
-  BorderStyle = bsSingle
+  BorderStyle = bsDialog
   Caption = #1040#1056#1052' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1087#1086#1076#1082#1083#1102#1095#1077#1085#1080#1077
   ClientHeight = 157
   ClientWidth = 490

@@ -5,7 +5,9 @@ interface
 uses
   System.SysUtils, System.Classes, Vcl.Dialogs, Data.DB, Data.Win.ADODB, IniFiles,
   VCL.Forms, Vcl.Menus, System.Actions, Vcl.ActnList,
-  Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan;
+  Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Data.Bind.EngExt,
+  Vcl.Bind.DBEngExt, Data.Bind.Components, Data.Bind.ObjectScope,
+  Data.Bind.GenData;
 
 type
   TBackData = class(TDataModule)
@@ -37,36 +39,50 @@ type
     N23: TMenuItem;
     N24: TMenuItem;
     N25: TMenuItem;
-    ADOQuery1: TADOQuery;
-    ADOQuery2: TADOQuery;
-    ADOQuery3: TADOQuery;
-    ADOQuery4: TADOQuery;
-    ADOQuery5: TADOQuery;
-    ADOQuery6: TADOQuery;
-    ADOQuery7: TADOQuery;
-    ADOQuery8: TADOQuery;
-    ADOQuery9: TADOQuery;
-    ADOQuery10: TADOQuery;
-    ADOQuery11: TADOQuery;
-    ADOQuery12: TADOQuery;
-    DataSource1: TDataSource;
-    DataSource2: TDataSource;
-    DataSource3: TDataSource;
-    DataSource4: TDataSource;
-    DataSource5: TDataSource;
-    DataSource6: TDataSource;
-    DataSource7: TDataSource;
-    DataSource8: TDataSource;
-    DataSource9: TDataSource;
-    DataSource10: TDataSource;
-    DataSource11: TDataSource;
-    DataSource12: TDataSource;
-    ADOQuery13: TADOQuery;
-    DataSource13: TDataSource;
+    EmployeesSQL: TADOQuery;
+    DepartmentSQL: TADOQuery;
+    LocationsSQL: TADOQuery;
+    CountrySQL: TADOQuery;
+    RegionsSQL: TADOQuery;
+    PassportSQL: TADOQuery;
+    JobHistorySQL: TADOQuery;
+    JobsSQL: TADOQuery;
+    SalariesSQL: TADOQuery;
+    MilitaryServiceSQL: TADOQuery;
+    MilitaryRanksSQL: TADOQuery;
+    CategoryReserveSQL: TADOQuery;
+    EmployeesSrc: TDataSource;
+    DepartmentSRC: TDataSource;
+    LocationsSRC: TDataSource;
+    CountrySRC: TDataSource;
+    RegionsSRC: TDataSource;
+    PassportSRC: TDataSource;
+    JobHistorySRC: TDataSource;
+    JobsSRC: TDataSource;
+    SalariesSRC: TDataSource;
+    MilitaryServiceSRC: TDataSource;
+    MilitaryRanksSRC: TDataSource;
+    CategoryReserveSRC: TDataSource;
+    FamilySQL: TADOQuery;
+    FamilySRC: TDataSource;
     RefReviewer: TADOQuery;
-    RefReviewerSource: TDataSource;
-    procedure ConnectionConnectComplete(Connection: TADOConnection;
-      const Error: Error; var EventStatus: TEventStatus);
+    RefReviewerSRC: TDataSource;
+    CompanySQL: TADOQuery;
+    CompanySRC: TDataSource;
+    RelationsSQL: TADOQuery;
+    RelationsSRC: TDataSource;
+    MarrStatusSQL: TADOQuery;
+    MarrStatusSRC: TDataSource;
+    VacationsSQL: TADOQuery;
+    VacationsSRC: TDataSource;
+    WorkCalendarSQL: TADOQuery;
+    WorkCalendarSRC: TDataSource;
+    DayTypeSQL: TADOQuery;
+    DayTypeSRC: TDataSource;
+    EventsSQL: TADOQuery;
+    EventsSRC: TDataSource;
+    SickDaysSQL: TADOQuery;
+    SickDaysSRC: TDataSource;
     procedure DataModuleCreate(Sender: TObject);
   private
 
@@ -115,7 +131,13 @@ end;
 
 procedure TBackData.DataModuleCreate(Sender: TObject);
   var ConfigPath:String;
+  var i:integer;
 begin
+
+  Connection.Connected := False;
+  Connection.ConnectionString := '';
+  EmployeesSql.Active:= False;
+
   try
     ConfigPath:= ExtractFileDir(Application.ExeName) + '\config.ini';
     Ini := TIniFile.Create(ConfigPath);
@@ -128,26 +150,8 @@ if (Not FileExists(ConfigPath)) then
         // after above line the file is created.
     end;
 
-end;
-
-procedure TBackData.ConnectionConnectComplete(Connection: TADOConnection;
-  const Error: Error; var EventStatus: TEventStatus);
-  var i:integer;
-begin
-
-  MainForm.DBTablesBox.Items.Clear;
-
-  for i := 0 to 9 do
-    begin
-      MainForm.DBTablesBox.Items.Add(TableNames[i]);
-    end;
-  MainForm.DBTablesBox.ItemIndex:=0;
-
-
 
 
 end;
-
-
 
 end.
