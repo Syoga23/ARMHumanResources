@@ -12,7 +12,8 @@ uses
   Vcl.Bind.DBEngExt, Data.Bind.Components, Vcl.Mask, VclTee.TeeGDIPlus,
   VCLTee.TeEngine, Vcl.Imaging.jpeg, VCLTee.TeeProcs, VCLTee.Chart, Vcl.Buttons,
   sSpeedButton, Vcl.CategoryButtons, Vcl.ColorGrd, Vcl.WinXCalendars,
-  Vcl.Samples.Calendar, Vcl.ActnMan, Vcl.ActnColorMaps, CalendarSyoga;
+  Vcl.Samples.Calendar, Vcl.ActnMan, Vcl.ActnColorMaps, CalendarSyoga,
+  Vcl.ExtDlgs;
 
   type
   TCalendar = class(Vcl.Samples.Calendar.TCalendar)
@@ -60,22 +61,34 @@ uses
     TabSheet1: TTabSheet;
     TabSheet5: TTabSheet;
     TabSheet6: TTabSheet;
-    DBLabeledEdit1: TDBLabeledEdit;
-    DBLabeledEdit2: TDBLabeledEdit;
-    DBLabeledEdit3: TDBLabeledEdit;
-    DBLabeledEdit4: TDBLabeledEdit;
+    DB_IDEdit: TDBLabeledEdit;
+    DB_OtchEdit: TDBLabeledEdit;
+    DB_NameEdit: TDBLabeledEdit;
+    DB_LastNameEdit: TDBLabeledEdit;
     Panel3: TPanel;
-    RadioButton1: TRadioButton;
-    RadioButton2: TRadioButton;
-    Label1: TLabel;
-    DBLabeledEdit5: TDBLabeledEdit;
-    DBLabeledEdit6: TDBLabeledEdit;
-    DBLabeledEdit7: TDBLabeledEdit;
+    DB_EditPhone: TDBLabeledEdit;
+    DB_EditEmail: TDBLabeledEdit;
+    DB_EditHired: TDBLabeledEdit;
     ListView1: TListView;
     Splitter2: TSplitter;
     Chart1: TChart;
     DBLabeledEdit8: TDBLabeledEdit;
     ColorDialog1: TColorDialog;
+    ListView2: TListView;
+    PhotoPanel: TPanel;
+    DeleteImage: TButton;
+    AddImage: TButton;
+    OpenPictureDialog1: TOpenPictureDialog;
+    DBMemo1: TDBMemo;
+    DBLabeledEdit10: TDBLabeledEdit;
+    DB_PolLookup: TDBLookupComboBox;
+    PolDBLabel: TLabel;
+    CheckBox1: TCheckBox;
+    TreeView1: TTreeView;
+    DBNavigator2: TDBNavigator;
+    DBLabeledEdit1: TDBLabeledEdit;
+    DBLabeledEdit2: TDBLabeledEdit;
+    GroupBox1: TGroupBox;
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure SidebarTimerTimer(Sender: TObject);
@@ -85,7 +98,8 @@ uses
     procedure RealTimeTimerTimer(Sender: TObject);
     procedure SidebarButtonClicked(Sender: TObject; Index: Integer);
     procedure DBTablesBoxChange(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure DeleteImageClick(Sender: TObject);
+    procedure AddImageClick(Sender: TObject);
   private
     Sidebarstate: boolean;
     MaxWidth:integer;
@@ -186,9 +200,66 @@ begin
   Sidebarstate := false;
 end;
 
-procedure TMainForm.Button1Click(Sender: TObject);
+procedure TMainForm.DeleteImageClick(Sender: TObject);
 begin
-ColorDialog1.Execute;
+  BackData.EmployeesSQL.Edit;
+  BackData.EmployeesSQL.FieldByName('photo').Clear;  // Очистить содержимое BLOB-поля
+  BackData.EmployeesSQL.Post;
+
+end;
+
+procedure TMainForm.AddImageClick(Sender: TObject);
+  var
+    BlobStream: TMemoryStream;
+    Field: TBlobField;
+    pict: TPicture;
+  const
+    MAX_WIDTH = 1200;  // Максимальная ширина изображения
+    MAX_HEIGHT = 1200; // Максимальная высота изображения
+begin
+  try
+    // Показать диалоговое окно и проверить, был ли выбран файл
+    if OpenPictureDialog1.Execute then
+    begin
+      pict := TPicture.Create;
+      // Создайте поток памяти для хранения изображения
+      pict.LoadFromFile(OpenPictureDialog1.FileName);
+      if (pict.Width<=MAX_WIDTH)and(pict.Height<=MAX_HEIGHT)
+       then
+     begin
+      Pict.Free;
+      BlobStream := TMemoryStream.Create;
+      try
+        // Загрузите выбранное изображение в поток
+
+        BlobStream.LoadFromFile(OpenPictureDialog1.FileName);
+        BlobStream.Position := 0; // Убедитесь, что позиция потока установлена на начало
+        // Загрузите изображение в TDBImage
+        DBImage1.Picture.LoadFromStream(BlobStream);
+        // Убедитесь, что запрос активен и настроен на редактирование
+        if BackData.EmployeesSQL.Active then
+        begin
+          BackData.EmployeesSQL.Edit;
+          Field := TBLobField(BackData.EmployeesSQL.FieldByName('photo'));
+          // Запишите поток в поле BLOB
+          Field.LoadFromStream(BlobStream);
+          // Завершите редактирование
+          BackData.EmployeesSQL.Post;
+        end;
+      finally
+        BlobStream.Free; // Освобождение ресурса потока
+      end;
+     end
+     else begin
+       ShowMessage('Selected image is too large. Please choose an image with dimensions up to ' +
+                      IntToStr(MAX_WIDTH) + 'x' + IntToStr(MAX_HEIGHT) + '.');
+       Pict.Free;
+     end;
+
+    end;
+  finally
+
+  end;
 end;
 
 procedure TMainForm.DBTablesBoxChange(Sender: TObject);

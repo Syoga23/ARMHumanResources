@@ -2,8 +2,8 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = #1040#1056#1052' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1089#1090#1088#1086#1081#1092#1080#1088#1084#1099
-  ClientHeight = 726
-  ClientWidth = 1090
+  ClientHeight = 725
+  ClientWidth = 1086
   Color = clBtnFace
   Constraints.MinHeight = 780
   Constraints.MinWidth = 1100
@@ -21,11 +21,11 @@ object MainForm: TMainForm
   OnShow = FormShow
   TextHeight = 15
   object PagesControl: TPageControl
-    Left = 40
+    Left = 36
     Top = 0
     Width = 1050
-    Height = 708
-    ActivePage = CalendarPage
+    Height = 707
+    ActivePage = WorkersPage
     Align = alRight
     DoubleBuffered = True
     Font.Charset = DEFAULT_CHARSET
@@ -36,8 +36,23 @@ object MainForm: TMainForm
     ParentDoubleBuffered = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 36
-    ExplicitHeight = 707
+    object DashboardPage: TTabSheet
+      Caption = '1'
+      ImageIndex = -1
+      TabVisible = False
+      object Chart1: TChart
+        Left = 552
+        Top = 3
+        Width = 489
+        Height = 377
+        Title.Text.Strings = (
+          'TChart')
+        View3D = False
+        TabOrder = 0
+        DefaultCanvas = 'TGDIPlusCanvas'
+        ColorPaletteIndex = 13
+      end
+    end
     object WorkersPage: TTabSheet
       Caption = '2'
       ImageIndex = -1
@@ -46,13 +61,13 @@ object MainForm: TMainForm
         Left = 0
         Top = 0
         Width = 1042
-        Height = 698
+        Height = 697
         Align = alClient
         Caption = 'Panel3'
         TabOrder = 0
         object Splitter1: TSplitter
           Left = 1
-          Top = 378
+          Top = 387
           Width = 1040
           Height = 3
           Cursor = crVSplit
@@ -65,155 +80,283 @@ object MainForm: TMainForm
           Left = 1
           Top = 1
           Width = 1040
-          Height = 377
+          Height = 386
           Align = alTop
           FullRepaint = False
           TabOrder = 0
+          ExplicitLeft = 0
+          ExplicitTop = -2
           DesignSize = (
             1040
-            377)
-          object Label1: TLabel
-            Left = 482
-            Top = 19
-            Width = 26
+            386)
+          object PolDBLabel: TLabel
+            Left = 531
+            Top = 16
+            Width = 23
             Height = 15
-            Caption = #1055#1086#1083':'
+            Caption = #1055#1086#1083
           end
-          object DBImage1: TDBImage
-            Left = 7
-            Top = 7
-            Width = 225
-            Height = 250
-            Align = alCustom
-            DataField = 'photo'
-            DataSource = BackData.EmployeesSrc
-            Stretch = True
-            TabOrder = 0
+          object GroupBox1: TGroupBox
+            Left = 592
+            Top = 129
+            Width = 377
+            Height = 214
+            Caption = 'GroupBox1'
+            TabOrder = 17
           end
-          object DBLabeledEdit1: TDBLabeledEdit
+          object DB_IDEdit: TDBLabeledEdit
             Left = 296
             Top = 13
-            Width = 121
+            Width = 160
             Height = 23
             DataField = 'employee_id'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 1
+            TabOrder = 0
             EditLabel.Width = 20
             EditLabel.Height = 23
             EditLabel.Caption = #1050#1086#1076
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit2: TDBLabeledEdit
-            Left = 776
+          object DB_OtchEdit: TDBLabeledEdit
+            Left = 840
             Top = 42
-            Width = 121
+            Width = 160
             Height = 23
-            Anchors = [akRight]
+            Anchors = [akLeft, akRight]
             DataField = 'Otchestvo'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 2
+            TabOrder = 1
             EditLabel.Width = 51
             EditLabel.Height = 23
             EditLabel.Caption = #1054#1090#1095#1077#1089#1090#1074#1086
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit3: TDBLabeledEdit
+          object DB_NameEdit: TDBLabeledEdit
             Left = 296
             Top = 42
-            Width = 121
+            Width = 160
             Height = 23
             DataField = 'first_name'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 3
+            TabOrder = 2
             EditLabel.Width = 24
             EditLabel.Height = 23
             EditLabel.Caption = #1048#1084#1103
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit4: TDBLabeledEdit
-            Left = 536
+          object DB_LastNameEdit: TDBLabeledEdit
+            Left = 560
             Top = 42
-            Width = 121
+            Width = 160
             Height = 23
-            Anchors = [akTop, akRight]
             DataField = 'last_name'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 4
+            TabOrder = 3
             EditLabel.Width = 51
             EditLabel.Height = 23
             EditLabel.Caption = #1060#1072#1084#1080#1083#1080#1103
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object RadioButton1: TRadioButton
-            Left = 538
-            Top = 19
-            Width = 113
-            Height = 17
-            Alignment = taLeftJustify
-            Caption = #1052#1091#1078#1089#1082#1086#1081
-            TabOrder = 5
-          end
-          object RadioButton2: TRadioButton
-            Left = 682
-            Top = 19
-            Width = 113
-            Height = 17
-            Alignment = taLeftJustify
-            Caption = #1046#1077#1085#1089#1082#1080#1081
-            TabOrder = 6
-          end
-          object DBLabeledEdit5: TDBLabeledEdit
-            Left = 536
+          object DB_EditPhone: TDBLabeledEdit
+            Left = 560
             Top = 71
-            Width = 121
+            Width = 160
             Height = 23
             DataField = 'phone_number'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 7
+            TabOrder = 4
             EditLabel.Width = 48
             EditLabel.Height = 23
             EditLabel.Caption = #1058#1077#1083#1077#1092#1086#1085
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit6: TDBLabeledEdit
+          object DB_EditEmail: TDBLabeledEdit
             Left = 296
             Top = 71
-            Width = 121
+            Width = 160
             Height = 23
             DataField = 'email'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 8
+            TabOrder = 5
             EditLabel.Width = 52
             EditLabel.Height = 23
             EditLabel.Caption = #1069#1083'. '#1087#1086#1095#1090#1072
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit7: TDBLabeledEdit
-            Left = 776
+          object DB_EditHired: TDBLabeledEdit
+            Left = 840
             Top = 71
-            Width = 121
+            Width = 160
             Height = 23
-            DataField = 'phone_number'
+            DataField = 'Hired_date'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 9
-            EditLabel.Width = 48
+            TabOrder = 6
+            EditLabel.Width = 33
             EditLabel.Height = 23
-            EditLabel.Caption = #1058#1077#1083#1077#1092#1086#1085
+            EditLabel.Caption = #1053#1072#1085#1103#1090
+            EditLabel.Layout = tlCenter
+            LabelPosition = lpLeft
+          end
+          object ListView2: TListView
+            Left = 234
+            Top = 136
+            Width = 335
+            Height = 207
+            Columns = <>
+            TabOrder = 7
+          end
+          object PhotoPanel: TPanel
+            Left = 1
+            Top = 1
+            Width = 214
+            Height = 384
+            Align = alLeft
+            BevelOuter = bvNone
+            Caption = 'Panel5'
+            ShowCaption = False
+            TabOrder = 8
+            object DBImage1: TDBImage
+              AlignWithMargins = True
+              Left = 7
+              Top = 7
+              Width = 200
+              Height = 300
+              Margins.Left = 7
+              Margins.Top = 7
+              Margins.Right = 7
+              Margins.Bottom = 0
+              Align = alClient
+              DataField = 'photo'
+              DataSource = BackData.EmployeesSrc
+              Stretch = True
+              TabOrder = 0
+            end
+            object DeleteImage: TButton
+              AlignWithMargins = True
+              Left = 7
+              Top = 347
+              Width = 200
+              Height = 30
+              Margins.Left = 7
+              Margins.Top = 5
+              Margins.Right = 7
+              Margins.Bottom = 7
+              Align = alBottom
+              Caption = #1059#1076#1072#1083#1080#1090#1100' '#1060#1086#1090#1086
+              TabOrder = 1
+              OnClick = DeleteImageClick
+            end
+            object AddImage: TButton
+              AlignWithMargins = True
+              Left = 7
+              Top = 312
+              Width = 200
+              Height = 30
+              Margins.Left = 7
+              Margins.Top = 5
+              Margins.Right = 7
+              Margins.Bottom = 0
+              Align = alBottom
+              Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1060#1086#1090#1086
+              TabOrder = 2
+              OnClick = AddImageClick
+            end
+          end
+          object DBMemo1: TDBMemo
+            Left = 608
+            Top = 150
+            Width = 185
+            Height = 89
+            TabOrder = 9
+          end
+          object DBLabeledEdit10: TDBLabeledEdit
+            Left = 296
+            Top = 100
+            Width = 160
+            Height = 23
+            DataField = 'department_id'
+            DataSource = BackData.EmployeesSrc
+            TabOrder = 10
+            EditLabel.Width = 33
+            EditLabel.Height = 23
+            EditLabel.Caption = #1054#1090#1076#1077#1083
+            EditLabel.Layout = tlCenter
+            LabelPosition = lpLeft
+          end
+          object DB_PolLookup: TDBLookupComboBox
+            Left = 560
+            Top = 13
+            Width = 160
+            Height = 23
+            DataField = 'Pol_Nazv'
+            DataSource = BackData.EmployeesSrc
+            ListField = 'Pol_Name'
+            TabOrder = 11
+          end
+          object CheckBox1: TCheckBox
+            Left = 234
+            Top = 355
+            Width = 97
+            Height = 17
+            Caption = 'CheckBox1'
+            TabOrder = 12
+          end
+          object TreeView1: TTreeView
+            Left = 433
+            Top = 198
+            Width = 121
+            Height = 97
+            Indent = 19
+            TabOrder = 13
+          end
+          object DBNavigator2: TDBNavigator
+            Left = 769
+            Top = 100
+            Width = 240
+            Height = 25
+            DataSource = BackData.EmployeesSrc
+            TabOrder = 14
+          end
+          object DBLabeledEdit1: TDBLabeledEdit
+            Left = 560
+            Top = 100
+            Width = 160
+            Height = 23
+            DataField = 'job_id'
+            DataSource = BackData.EmployeesSrc
+            TabOrder = 15
+            EditLabel.Width = 63
+            EditLabel.Height = 23
+            EditLabel.Caption = #1055#1088#1086#1092#1077#1089#1089#1080#1103
+            EditLabel.Layout = tlCenter
+            LabelPosition = lpLeft
+          end
+          object DBLabeledEdit2: TDBLabeledEdit
+            Left = 840
+            Top = 13
+            Width = 160
+            Height = 23
+            DataField = 'birthdate'
+            DataSource = BackData.EmployeesSrc
+            TabOrder = 16
+            EditLabel.Width = 85
+            EditLabel.Height = 23
+            EditLabel.Caption = #1044#1077#1085#1100' '#1088#1086#1078#1076#1077#1085#1080#1103
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
         end
         object Panel4: TPanel
           Left = 1
-          Top = 381
+          Top = 390
           Width = 1040
-          Height = 316
+          Height = 306
           Align = alClient
           BevelOuter = bvNone
           FullRepaint = False
@@ -222,7 +365,7 @@ object MainForm: TMainForm
             Left = 0
             Top = 0
             Width = 1040
-            Height = 316
+            Height = 306
             ActivePage = TabSheet6
             Align = alClient
             TabOrder = 0
@@ -241,21 +384,30 @@ object MainForm: TMainForm
         end
       end
     end
-    object DashboardPage: TTabSheet
-      Caption = '1'
-      ImageIndex = -1
+    object ReportsPage: TTabSheet
+      Caption = '4'
+      ImageIndex = 5
       TabVisible = False
-      object Chart1: TChart
-        Left = 552
-        Top = 3
-        Width = 489
-        Height = 377
-        Title.Text.Strings = (
-          'TChart')
-        View3D = False
+      object Button6: TButton
+        Left = 528
+        Top = 368
+        Width = 75
+        Height = 25
+        Caption = 'Button4'
         TabOrder = 0
-        DefaultCanvas = 'TGDIPlusCanvas'
-        ColorPaletteIndex = 13
+      end
+    end
+    object BirthdayPage: TTabSheet
+      Caption = '3'
+      ImageIndex = 4
+      TabVisible = False
+      object Button4: TButton
+        Left = 512
+        Top = 352
+        Width = 75
+        Height = 25
+        Caption = 'Button3'
+        TabOrder = 0
       end
     end
     object DatabasesPage: TTabSheet
@@ -266,7 +418,7 @@ object MainForm: TMainForm
       object Splitter2: TSplitter
         Left = 247
         Top = 33
-        Height = 624
+        Height = 623
         ExplicitLeft = 480
         ExplicitTop = 392
         ExplicitHeight = 100
@@ -275,7 +427,7 @@ object MainForm: TMainForm
         Left = 250
         Top = 33
         Width = 792
-        Height = 624
+        Height = 623
         Align = alClient
         DataSource = BackData.RefReviewerSRC
         TabOrder = 0
@@ -287,7 +439,7 @@ object MainForm: TMainForm
       end
       object Panel1: TPanel
         Left = 0
-        Top = 657
+        Top = 656
         Width = 1042
         Height = 41
         Align = alBottom
@@ -329,7 +481,7 @@ object MainForm: TMainForm
         Left = 0
         Top = 33
         Width = 247
-        Height = 624
+        Height = 623
         Align = alLeft
         Columns = <>
         TabOrder = 3
@@ -343,7 +495,7 @@ object MainForm: TMainForm
         Left = 0
         Top = 0
         Width = 1042
-        Height = 698
+        Height = 697
         ActivePage = CompanySettings
         Align = alClient
         MultiLine = True
@@ -375,32 +527,6 @@ object MainForm: TMainForm
           Caption = 'TabSheet4'
           ImageIndex = 3
         end
-      end
-    end
-    object BirthdayPage: TTabSheet
-      Caption = '3'
-      ImageIndex = 4
-      TabVisible = False
-      object Button4: TButton
-        Left = 512
-        Top = 352
-        Width = 75
-        Height = 25
-        Caption = 'Button3'
-        TabOrder = 0
-      end
-    end
-    object ReportsPage: TTabSheet
-      Caption = '4'
-      ImageIndex = 5
-      TabVisible = False
-      object Button6: TButton
-        Left = 528
-        Top = 368
-        Width = 75
-        Height = 25
-        Caption = 'Button4'
-        TabOrder = 0
       end
     end
     object PrintPage: TTabSheet
@@ -472,8 +598,8 @@ object MainForm: TMainForm
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 708
-    Width = 1090
+    Top = 707
+    Width = 1086
     Height = 18
     BiDiMode = bdLeftToRight
     DoubleBuffered = False
@@ -494,8 +620,6 @@ object MainForm: TMainForm
     ParentDoubleBuffered = False
     SizeGrip = False
     StyleName = 'Carbon'
-    ExplicitTop = 707
-    ExplicitWidth = 1086
   end
   object SidebarTimer: TTimer
     Interval = 1
@@ -2106,7 +2230,16 @@ object MainForm: TMainForm
     Top = 522
   end
   object ColorDialog1: TColorDialog
-    Left = 1004
-    Top = 110
+    Left = 4
+    Top = 478
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 
+      'JPEG Image File (*.jpg)|*.jpg|JPEG Image File (*.jpeg)|*.jpeg|Po' +
+      'rtable Network Graphics (*.png)|*.png|Bitmaps (*.bmp)|*.bmp'
+    FilterIndex = 0
+    Options = [ofHideReadOnly, ofExtensionDifferent, ofPathMustExist, ofFileMustExist, ofNoLongNames, ofEnableSizing]
+    Left = 9
+    Top = 413
   end
 end

@@ -1,6 +1,6 @@
 object BackData: TBackData
   OnCreate = DataModuleCreate
-  Height = 535
+  Height = 397
   Width = 1098
   object Connection: TADOConnection
     Connected = True
@@ -10,6 +10,7 @@ object BackData: TBackData
       'ERGEIPC\SQLSERVER2008'
     LoginPrompt = False
     Provider = 'SQLOLEDB.1'
+    OnConnectComplete = ConnectionConnectComplete
     Left = 112
     Top = 16
   end
@@ -104,6 +105,70 @@ object BackData: TBackData
       'SELECT * FROM EMPLOYEES')
     Left = 208
     Top = 16
+    object EmployeesSQLemployee_id: TAutoIncField
+      FieldName = 'employee_id'
+      ReadOnly = True
+    end
+    object EmployeesSQLfirst_name: TStringField
+      FieldName = 'first_name'
+      Size = 100
+    end
+    object EmployeesSQLlast_name: TStringField
+      FieldName = 'last_name'
+      Size = 100
+    end
+    object EmployeesSQLOtchestvo: TStringField
+      FieldName = 'Otchestvo'
+      Size = 100
+    end
+    object EmployeesSQLbirthdate: TWideStringField
+      FieldName = 'birthdate'
+      Size = 10
+    end
+    object EmployeesSQLemail: TStringField
+      FieldName = 'email'
+      Size = 100
+    end
+    object EmployeesSQLphoto: TBlobField
+      FieldName = 'photo'
+    end
+    object EmployeesSQLphone_number: TStringField
+      FieldName = 'phone_number'
+    end
+    object EmployeesSQLHired_date: TWideStringField
+      FieldName = 'Hired_date'
+      Size = 10
+    end
+    object EmployeesSQLTerminated_date: TWideStringField
+      FieldName = 'Terminated_date'
+      Size = 10
+    end
+    object EmployeesSQLTermination_reason: TWideStringField
+      FieldName = 'Termination_reason'
+      Size = 250
+    end
+    object EmployeesSQLjob_id: TIntegerField
+      FieldName = 'job_id'
+    end
+    object EmployeesSQLdepartment_id: TIntegerField
+      FieldName = 'department_id'
+    end
+    object EmployeesSQLabout: TWideStringField
+      FieldName = 'about'
+      Size = 250
+    end
+    object EmployeesSQLPol_id: TIntegerField
+      FieldName = 'Pol_id'
+    end
+    object EmployeesSQLPol_Nazv: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Pol_Nazv'
+      LookupDataSet = PolSQL
+      LookupKeyFields = 'Pol_ID'
+      LookupResultField = 'Pol_Name'
+      KeyFields = 'Pol_id'
+      Lookup = True
+    end
   end
   object DepartmentSQL: TADOQuery
     Connection = Connection
@@ -195,6 +260,7 @@ object BackData: TBackData
   end
   object EmployeesSrc: TDataSource
     DataSet = EmployeesSQL
+    OnDataChange = EmployeesSrcDataChange
     Left = 296
     Top = 16
   end
@@ -379,5 +445,28 @@ object BackData: TBackData
     DataSet = SickDaysSQL
     Left = 504
     Top = 184
+  end
+  object PolSQL: TADOQuery
+    Active = True
+    Connection = Connection
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT * FROM Pol ')
+    Left = 816
+    Top = 128
+    object PolSQLPol_ID: TAutoIncField
+      FieldName = 'Pol_ID'
+      ReadOnly = True
+    end
+    object PolSQLPol_Name: TWideStringField
+      FieldName = 'Pol_Name'
+      Size = 100
+    end
+  end
+  object PolSRC: TDataSource
+    DataSet = PolSQL
+    Left = 928
+    Top = 128
   end
 end

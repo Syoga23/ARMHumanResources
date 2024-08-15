@@ -83,7 +83,31 @@ type
     EventsSRC: TDataSource;
     SickDaysSQL: TADOQuery;
     SickDaysSRC: TDataSource;
+    PolSQL: TADOQuery;
+    PolSRC: TDataSource;
+    EmployeesSQLemployee_id: TAutoIncField;
+    EmployeesSQLfirst_name: TStringField;
+    EmployeesSQLlast_name: TStringField;
+    EmployeesSQLOtchestvo: TStringField;
+    EmployeesSQLbirthdate: TWideStringField;
+    EmployeesSQLemail: TStringField;
+    EmployeesSQLphoto: TBlobField;
+    EmployeesSQLphone_number: TStringField;
+    EmployeesSQLHired_date: TWideStringField;
+    EmployeesSQLTerminated_date: TWideStringField;
+    EmployeesSQLTermination_reason: TWideStringField;
+    EmployeesSQLjob_id: TIntegerField;
+    EmployeesSQLdepartment_id: TIntegerField;
+    EmployeesSQLabout: TWideStringField;
+    PolSQLPol_ID: TAutoIncField;
+    PolSQLPol_Name: TWideStringField;
+    EmployeesSQLPol_id: TIntegerField;
+    EmployeesSQLPol_Nazv: TStringField;
     procedure DataModuleCreate(Sender: TObject);
+    procedure ConnectionConnectComplete(Connection: TADOConnection;
+      const Error: Error; var EventStatus: TEventStatus);
+    procedure EmployeesSrcDataChange(Sender: TObject; Field: TField);
+    //procedure EmployeesSrcDataChange(Sender: TObject; Field: TField);
   private
 
     { Private declarations }
@@ -129,6 +153,12 @@ end;
 
 end;
 
+procedure TBackData.ConnectionConnectComplete(Connection: TADOConnection;
+  const Error: Error; var EventStatus: TEventStatus);
+begin
+EmployeesSql.Active:= True;
+end;
+
 procedure TBackData.DataModuleCreate(Sender: TObject);
   var ConfigPath:String;
   var i:integer;
@@ -151,6 +181,15 @@ if (Not FileExists(ConfigPath)) then
     end;
 
 
+
+end;
+
+procedure TBackData.EmployeesSrcDataChange(Sender: TObject; Field: TField);
+begin
+  if (EmployeesSQL.FieldByName('photo').IsNull) then
+  begin
+    MainForm.DBImage1.Picture.LoadFromFile(ExtractFileDir(Application.ExeName)+ '\images\Default.jpg'); // DefaultImage - это изображение по умолчанию, заранее подготовленное
+  end;
 
 end;
 
