@@ -7,7 +7,7 @@ uses
   VCL.Forms, Vcl.Menus, System.Actions, Vcl.ActnList,
   Vcl.PlatformDefaultStyleActnCtrls, Vcl.ActnMan, Data.Bind.EngExt,
   Vcl.Bind.DBEngExt, Data.Bind.Components, Data.Bind.ObjectScope,
-  Data.Bind.GenData;
+  Data.Bind.GenData, System.ImageList, Vcl.ImgList, Vcl.Controls, System.Types, Vcl.Graphics;
 
 type
   TBackData = class(TDataModule)
@@ -103,11 +103,21 @@ type
     PolSQLPol_Name: TWideStringField;
     EmployeesSQLPol_id: TIntegerField;
     EmployeesSQLPol_Nazv: TStringField;
+    DepartmentSQLdepartment_id: TAutoIncField;
+    DepartmentSQLdepartment_name: TWideStringField;
+    DepartmentSQLlocation_id: TIntegerField;
+    EmployeesSQLDepartment_Nazv: TStringField;
+    DBGridDelete: TPopupMenu;
+    D1: TMenuItem;
+    ActionIcons: TImageList;
     procedure DataModuleCreate(Sender: TObject);
     procedure ConnectionConnectComplete(Connection: TADOConnection;
       const Error: Error; var EventStatus: TEventStatus);
     procedure EmployeesSrcDataChange(Sender: TObject; Field: TField);
-    //procedure EmployeesSrcDataChange(Sender: TObject; Field: TField);
+    procedure D1Click(Sender: TObject);
+    procedure RefReviewerSRCDataChange(Sender: TObject; Field: TField);
+    procedure DepartmentSRCDataChange(Sender: TObject; Field: TField);
+    procedure N1Click(Sender: TObject);
   private
 
     { Private declarations }
@@ -116,9 +126,16 @@ type
 
     const TableNames : array[0..9] of string =
     (
+      'Профессии', 'Зарплаты', 'Больничные', 'Отделы', 'Города',
+      'Страны', 'Регионы', 'Праздники', 'Тип дня', 'Отпуски'
+    );
+
+    const SQLTables : array[0..9] of string =
+    (
       'JOBS', 'Salaries', 'SickDays', 'DEPARTMENTS', 'LOCATIONS',
       'COUNTRIES', 'REGIONS', 'Events', 'DayType', 'Vacations'
     );
+
 
     { Public declarations }
   end;
@@ -134,6 +151,55 @@ uses ConnectUnit, MainUnit;
 
 {$R *.dfm}
 
+
+procedure UpdateQueries;
+begin
+BackData.EmployeesSQL.Close;
+BackData.DepartmentSQL.Close;
+BackData.LocationsSQL.Close;
+BackData.CountrySQL.Close;
+BackData.RegionsSQL.Close;
+BackData.PassportSQL.Close;
+BackData.JobhistorySQL.Close;
+BackData.JobsSQL.Close;
+BackData.SalariesSQL.Close;
+BackData.SickDaysSQL.Close;
+BackData.MilitaryServiceSQL.Close;
+BackData.MilitaryRanksSQL.Close;
+BackData.CategoryReserveSQL.Close;
+BackData.FamilySQL.Close;
+BackData.RelationsSQL.Close;
+BackData.MarrStatusSQL.Close;
+BackData.VacationsSQL.Close;
+BackData.WorkCalendarSQL.Close;
+BackData.EventsSQL.Close;
+BackData.DayTypeSQL.Close;
+BackData.PolSQL.Close;
+// IM HERE IM HERE IM HERE IM HERE IM HERE IM HERE IM HERE
+BackData.EmployeesSQL.Open;
+BackData.DepartmentSQL.Open;
+BackData.LocationsSQL.Open;
+BackData.CountrySQL.Open;
+BackData.RegionsSQL.Open;
+BackData.PassportSQL.Open;
+BackData.JobhistorySQL.Open;
+BackData.JobsSQL.Open;
+BackData.SalariesSQL.Open;
+BackData.SickDaysSQL.Open;
+BackData.MilitaryServiceSQL.Open;
+BackData.MilitaryRanksSQL.Open;
+BackData.CategoryReserveSQL.Open;
+BackData.FamilySQL.Open;
+BackData.RelationsSQL.Open;
+BackData.MarrStatusSQL.Open;
+BackData.VacationsSQL.Open;
+BackData.WorkCalendarSQL.Open;
+BackData.EventsSQL.Open;
+BackData.DayTypeSQL.Open;
+BackData.PolSQL.Open;
+
+MainForm.DB_DepartmentsList.Update;
+end;
 
 procedure SetIniDefaults;
  Var IniLocal: TiniFile;
@@ -158,6 +224,14 @@ procedure TBackData.ConnectionConnectComplete(Connection: TADOConnection;
 begin
 EmployeesSql.Active:= True;
 end;
+
+procedure TBackData.D1Click(Sender: TObject);
+  var i:integer;
+begin
+  if messageDlg('Вы уверены, что хотите удалить выбранную запись?', mtWarning, [mbYes, mbNo], 0) = mrYes
+      then RefReviewer.Delete;
+end;
+
 
 procedure TBackData.DataModuleCreate(Sender: TObject);
   var ConfigPath:String;
@@ -184,13 +258,32 @@ if (Not FileExists(ConfigPath)) then
 
 end;
 
+procedure TBackData.DepartmentSRCDataChange(Sender: TObject; Field: TField);
+begin
+EmployeesSQL.Close;
+EmployeesSQL.Parameters.ParamByName('Department').Value := DepartmentSQL.FieldByName('department_id').Value;
+EmployeesSQL.Open;
+end;
+
+
+
 procedure TBackData.EmployeesSrcDataChange(Sender: TObject; Field: TField);
 begin
   if (EmployeesSQL.FieldByName('photo').IsNull) then
   begin
     MainForm.DBImage1.Picture.LoadFromFile(ExtractFileDir(Application.ExeName)+ '\images\Default.jpg'); // DefaultImage - это изображение по умолчанию, заранее подготовленное
   end;
+end;
 
+
+procedure TBackData.N1Click(Sender: TObject);
+begin
+MainForm.PagesControl.ActivePage:= MainForm.SettingsPage;
+end;
+
+procedure TBackData.RefReviewerSRCDataChange(Sender: TObject; Field: TField);
+begin
+UpdateQueries;
 end;
 
 end.

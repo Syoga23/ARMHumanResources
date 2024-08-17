@@ -2,8 +2,8 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = #1040#1056#1052' '#1086#1090#1076#1077#1083#1072' '#1082#1072#1076#1088#1086#1074' '#1089#1090#1088#1086#1081#1092#1080#1088#1084#1099
-  ClientHeight = 725
-  ClientWidth = 1086
+  ClientHeight = 721
+  ClientWidth = 1084
   Color = clBtnFace
   Constraints.MinHeight = 780
   Constraints.MinWidth = 1100
@@ -21,10 +21,10 @@ object MainForm: TMainForm
   OnShow = FormShow
   TextHeight = 15
   object PagesControl: TPageControl
-    Left = 36
+    Left = 34
     Top = 0
     Width = 1050
-    Height = 707
+    Height = 703
     ActivePage = WorkersPage
     Align = alRight
     DoubleBuffered = True
@@ -61,7 +61,7 @@ object MainForm: TMainForm
         Left = 0
         Top = 0
         Width = 1042
-        Height = 697
+        Height = 693
         Align = alClient
         Caption = 'Panel3'
         TabOrder = 0
@@ -84,11 +84,6 @@ object MainForm: TMainForm
           Align = alTop
           FullRepaint = False
           TabOrder = 0
-          ExplicitLeft = 0
-          ExplicitTop = -2
-          DesignSize = (
-            1040
-            386)
           object PolDBLabel: TLabel
             Left = 531
             Top = 16
@@ -96,13 +91,13 @@ object MainForm: TMainForm
             Height = 15
             Caption = #1055#1086#1083
           end
-          object GroupBox1: TGroupBox
-            Left = 592
+          object GroupBoxMemo: TGroupBox
+            Left = 632
             Top = 129
-            Width = 377
-            Height = 214
-            Caption = 'GroupBox1'
-            TabOrder = 17
+            Width = 368
+            Height = 211
+            Caption = #1054' '#1088#1072#1073#1086#1090#1085#1080#1082#1077':'
+            TabOrder = 14
           end
           object DB_IDEdit: TDBLabeledEdit
             Left = 296
@@ -111,6 +106,7 @@ object MainForm: TMainForm
             Height = 23
             DataField = 'employee_id'
             DataSource = BackData.EmployeesSrc
+            Enabled = False
             TabOrder = 0
             EditLabel.Width = 20
             EditLabel.Height = 23
@@ -123,7 +119,6 @@ object MainForm: TMainForm
             Top = 42
             Width = 160
             Height = 23
-            Anchors = [akLeft, akRight]
             DataField = 'Otchestvo'
             DataSource = BackData.EmployeesSrc
             TabOrder = 1
@@ -197,19 +192,12 @@ object MainForm: TMainForm
             DataField = 'Hired_date'
             DataSource = BackData.EmployeesSrc
             TabOrder = 6
+            OnExit = DB_EditHiredExit
             EditLabel.Width = 33
             EditLabel.Height = 23
             EditLabel.Caption = #1053#1072#1085#1103#1090
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
-          end
-          object ListView2: TListView
-            Left = 234
-            Top = 136
-            Width = 335
-            Height = 207
-            Columns = <>
-            TabOrder = 7
           end
           object PhotoPanel: TPanel
             Left = 1
@@ -220,7 +208,7 @@ object MainForm: TMainForm
             BevelOuter = bvNone
             Caption = 'Panel5'
             ShowCaption = False
-            TabOrder = 8
+            TabOrder = 7
             object DBImage1: TDBImage
               AlignWithMargins = True
               Left = 7
@@ -268,21 +256,24 @@ object MainForm: TMainForm
               OnClick = AddImageClick
             end
           end
-          object DBMemo1: TDBMemo
-            Left = 608
-            Top = 150
-            Width = 185
-            Height = 89
-            TabOrder = 9
+          object DBMemoAbout: TDBMemo
+            Left = 640
+            Top = 144
+            Width = 350
+            Height = 185
+            DataField = 'about'
+            DataSource = BackData.EmployeesSrc
+            MaxLength = 250
+            TabOrder = 8
           end
-          object DBLabeledEdit10: TDBLabeledEdit
+          object DB_EditDepartment: TDBLabeledEdit
             Left = 296
             Top = 100
             Width = 160
             Height = 23
             DataField = 'department_id'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 10
+            TabOrder = 9
             EditLabel.Width = 33
             EditLabel.Height = 23
             EditLabel.Caption = #1054#1090#1076#1077#1083
@@ -296,24 +287,7 @@ object MainForm: TMainForm
             Height = 23
             DataField = 'Pol_Nazv'
             DataSource = BackData.EmployeesSrc
-            ListField = 'Pol_Name'
-            TabOrder = 11
-          end
-          object CheckBox1: TCheckBox
-            Left = 234
-            Top = 355
-            Width = 97
-            Height = 17
-            Caption = 'CheckBox1'
-            TabOrder = 12
-          end
-          object TreeView1: TTreeView
-            Left = 433
-            Top = 198
-            Width = 121
-            Height = 97
-            Indent = 19
-            TabOrder = 13
+            TabOrder = 10
           end
           object DBNavigator2: TDBNavigator
             Left = 769
@@ -321,42 +295,143 @@ object MainForm: TMainForm
             Width = 240
             Height = 25
             DataSource = BackData.EmployeesSrc
-            TabOrder = 14
+            TabOrder = 11
           end
-          object DBLabeledEdit1: TDBLabeledEdit
+          object DB_EditJob: TDBLabeledEdit
             Left = 560
             Top = 100
             Width = 160
             Height = 23
             DataField = 'job_id'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 15
+            TabOrder = 12
             EditLabel.Width = 63
             EditLabel.Height = 23
             EditLabel.Caption = #1055#1088#1086#1092#1077#1089#1089#1080#1103
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
-          object DBLabeledEdit2: TDBLabeledEdit
+          object DB_EditBirthdate: TDBLabeledEdit
             Left = 840
             Top = 13
             Width = 160
             Height = 23
             DataField = 'birthdate'
             DataSource = BackData.EmployeesSrc
-            TabOrder = 16
+            TabOrder = 13
+            OnExit = DB_EditBirthdateExit
             EditLabel.Width = 85
             EditLabel.Height = 23
             EditLabel.Caption = #1044#1077#1085#1100' '#1088#1086#1078#1076#1077#1085#1080#1103
             EditLabel.Layout = tlCenter
             LabelPosition = lpLeft
           end
+          object DB_DepartmentsList: TDBLookupListBox
+            Left = 234
+            Top = 144
+            Width = 183
+            Height = 184
+            KeyField = 'department_id'
+            ListField = 'department_name'
+            ListSource = BackData.DepartmentSRC
+            TabOrder = 15
+          end
+          object bottomWorkerPanel: TPanel
+            Left = 423
+            Top = 346
+            Width = 586
+            Height = 34
+            BevelOuter = bvNone
+            Caption = 'Panel5'
+            ShowCaption = False
+            TabOrder = 16
+            object CheckBox1: TCheckBox
+              AlignWithMargins = True
+              Left = 443
+              Top = 3
+              Width = 140
+              Height = 28
+              Margins.Left = 5
+              Align = alRight
+              Caption = #1055#1086#1082#1072#1079#1072#1090#1100' '#1091#1074#1086#1083#1077#1085#1085#1099#1093
+              Constraints.MinWidth = 140
+              TabOrder = 0
+            end
+            object BitBtn2: TBitBtn
+              AlignWithMargins = True
+              Left = 327
+              Top = 5
+              Width = 75
+              Height = 26
+              Margins.Top = 5
+              Align = alLeft
+              Caption = 'BitBtn1'
+              Constraints.MaxHeight = 26
+              TabOrder = 1
+            end
+            object BitBtn3: TBitBtn
+              AlignWithMargins = True
+              Left = 246
+              Top = 5
+              Width = 75
+              Height = 26
+              Margins.Top = 5
+              Align = alLeft
+              Caption = 'BitBtn1'
+              Constraints.MaxHeight = 26
+              TabOrder = 2
+            end
+            object BitBtn4: TBitBtn
+              AlignWithMargins = True
+              Left = 165
+              Top = 5
+              Width = 75
+              Height = 26
+              Margins.Top = 5
+              Align = alLeft
+              Caption = 'BitBtn1'
+              Constraints.MaxHeight = 26
+              TabOrder = 3
+            end
+            object BitBtn5: TBitBtn
+              AlignWithMargins = True
+              Left = 84
+              Top = 5
+              Width = 75
+              Height = 26
+              Margins.Top = 5
+              Align = alLeft
+              Caption = 'BitBtn1'
+              Constraints.MaxHeight = 26
+              TabOrder = 4
+            end
+            object BitBtn6: TBitBtn
+              AlignWithMargins = True
+              Left = 3
+              Top = 5
+              Width = 75
+              Height = 26
+              Margins.Top = 5
+              Align = alLeft
+              Caption = 'BitBtn1'
+              Constraints.MaxHeight = 26
+              TabOrder = 5
+            end
+          end
+          object Button1: TButton
+            Left = 523
+            Top = 256
+            Width = 75
+            Height = 25
+            Caption = 'OK'
+            TabOrder = 17
+          end
         end
         object Panel4: TPanel
           Left = 1
           Top = 390
           Width = 1040
-          Height = 306
+          Height = 302
           Align = alClient
           BevelOuter = bvNone
           FullRepaint = False
@@ -365,7 +440,7 @@ object MainForm: TMainForm
             Left = 0
             Top = 0
             Width = 1040
-            Height = 306
+            Height = 302
             ActivePage = TabSheet6
             Align = alClient
             TabOrder = 0
@@ -384,19 +459,6 @@ object MainForm: TMainForm
         end
       end
     end
-    object ReportsPage: TTabSheet
-      Caption = '4'
-      ImageIndex = 5
-      TabVisible = False
-      object Button6: TButton
-        Left = 528
-        Top = 368
-        Width = 75
-        Height = 25
-        Caption = 'Button4'
-        TabOrder = 0
-      end
-    end
     object BirthdayPage: TTabSheet
       Caption = '3'
       ImageIndex = 4
@@ -410,26 +472,33 @@ object MainForm: TMainForm
         TabOrder = 0
       end
     end
+    object ReportsPage: TTabSheet
+      Caption = '4'
+      ImageIndex = 5
+      TabVisible = False
+      object Button6: TButton
+        Left = 528
+        Top = 368
+        Width = 75
+        Height = 25
+        Caption = 'Button4'
+        TabOrder = 0
+      end
+    end
     object DatabasesPage: TTabSheet
       Caption = '5'
       DoubleBuffered = False
       ParentDoubleBuffered = False
       TabVisible = False
-      object Splitter2: TSplitter
-        Left = 247
-        Top = 33
-        Height = 623
-        ExplicitLeft = 480
-        ExplicitTop = 392
-        ExplicitHeight = 100
-      end
       object DBGrid1: TDBGrid
-        Left = 250
+        Left = 0
         Top = 33
-        Width = 792
-        Height = 623
+        Width = 1042
+        Height = 620
         Align = alClient
         DataSource = BackData.RefReviewerSRC
+        Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgMultiSelect, dgTitleClick, dgTitleHotTrack]
+        PopupMenu = BackData.DBGridDelete
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -437,11 +506,11 @@ object MainForm: TMainForm
         TitleFont.Name = 'Segoe UI'
         TitleFont.Style = []
       end
-      object Panel1: TPanel
+      object DBPanel_Bottom: TPanel
         Left = 0
-        Top = 656
+        Top = 653
         Width = 1042
-        Height = 41
+        Height = 40
         Align = alBottom
         BevelEdges = []
         BevelOuter = bvNone
@@ -451,21 +520,41 @@ object MainForm: TMainForm
         TabOrder = 1
         object DBNavigator1: TDBNavigator
           AlignWithMargins = True
-          Left = 687
+          Left = 676
           Top = 5
-          Width = 350
-          Height = 31
+          Width = 200
+          Height = 30
           Margins.Left = 5
           Margins.Top = 5
           Margins.Right = 5
           Margins.Bottom = 5
           DataSource = BackData.RefReviewerSRC
-          VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
+          VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbEdit, nbPost, nbCancel, nbRefresh]
           Align = alRight
+          Constraints.MaxHeight = 30
+          Constraints.MaxWidth = 200
+          Constraints.MinHeight = 30
+          Constraints.MinWidth = 200
           TabOrder = 0
+          ExplicitLeft = 672
+        end
+        object DBcombobox: TComboBoxEx
+          AlignWithMargins = True
+          Left = 888
+          Top = 9
+          Width = 145
+          Height = 24
+          Margins.Left = 7
+          Margins.Top = 9
+          Margins.Right = 9
+          Align = alRight
+          ItemsEx = <>
+          Style = csExDropDownList
+          TabOrder = 1
+          OnChange = DBcomboboxChange
         end
       end
-      object Panel2: TPanel
+      object DBPanel_Top: TPanel
         Left = 0
         Top = 0
         Width = 1042
@@ -477,15 +566,11 @@ object MainForm: TMainForm
         ShowCaption = False
         TabOrder = 2
       end
-      object ListView1: TListView
-        Left = 0
-        Top = 33
-        Width = 247
-        Height = 623
-        Align = alLeft
-        Columns = <>
-        TabOrder = 3
-      end
+    end
+    object CalendarPage: TTabSheet
+      Caption = '6'
+      ImageIndex = 7
+      TabVisible = False
     end
     object SettingsPage: TTabSheet
       Caption = '8'
@@ -495,7 +580,7 @@ object MainForm: TMainForm
         Left = 0
         Top = 0
         Width = 1042
-        Height = 697
+        Height = 693
         ActivePage = CompanySettings
         Align = alClient
         MultiLine = True
@@ -541,11 +626,6 @@ object MainForm: TMainForm
         Caption = 'Button7'
         TabOrder = 0
       end
-    end
-    object CalendarPage: TTabSheet
-      Caption = '6'
-      ImageIndex = 7
-      TabVisible = False
     end
   end
   object Sidebar: TButtonGroup
@@ -598,8 +678,8 @@ object MainForm: TMainForm
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 707
-    Width = 1086
+    Top = 703
+    Width = 1084
     Height = 18
     BiDiMode = bdLeftToRight
     DoubleBuffered = False
@@ -2239,7 +2319,7 @@ object MainForm: TMainForm
       'rtable Network Graphics (*.png)|*.png|Bitmaps (*.bmp)|*.bmp'
     FilterIndex = 0
     Options = [ofHideReadOnly, ofExtensionDifferent, ofPathMustExist, ofFileMustExist, ofNoLongNames, ofEnableSizing]
-    Left = 9
-    Top = 413
+    Left = 1
+    Top = 429
   end
 end

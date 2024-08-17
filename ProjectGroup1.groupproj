@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{16F87CAE-1E82-414D-9875-FD366E7C2F52}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ARMHR.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ENU\ARMHR_ENU.bdsproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RUS\ARMHR_RUS.bdsproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ARMHR">
+        <MSBuild Projects="ARMHR.dproj"/>
+    </Target>
+    <Target Name="ARMHR:Clean">
+        <MSBuild Projects="ARMHR.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ARMHR:Make">
+        <MSBuild Projects="ARMHR.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ARMHR_ENU">
+        <MSBuild Projects="ENU\ARMHR_ENU.bdsproj"/>
+    </Target>
+    <Target Name="ARMHR_ENU:Clean">
+        <MSBuild Projects="ENU\ARMHR_ENU.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ARMHR_ENU:Make">
+        <MSBuild Projects="ENU\ARMHR_ENU.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="ARMHR_RUS">
+        <MSBuild Projects="RUS\ARMHR_RUS.bdsproj"/>
+    </Target>
+    <Target Name="ARMHR_RUS:Clean">
+        <MSBuild Projects="RUS\ARMHR_RUS.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ARMHR_RUS:Make">
+        <MSBuild Projects="RUS\ARMHR_RUS.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ARMHR;ARMHR_ENU;ARMHR_RUS"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ARMHR:Clean;ARMHR_ENU:Clean;ARMHR_RUS:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ARMHR:Make;ARMHR_ENU:Make;ARMHR_RUS:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

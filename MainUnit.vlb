@@ -88,12 +88,6 @@ Coordinates=672,386,122,51
 [DBGrid1]
 Coordinates=1056,522,56,33
 
-[Panel2]
-Coordinates=228,454,47,51
-
-[Panel1]
-Coordinates=163,454,47,51
-
 [BackData.DataSource8]
 Coordinates=117,508,127,33
 
@@ -204,4 +198,10 @@ Coordinates=860,120,175,159
 []
 Coordinates=522,454,53,51
 Visible=True
+
+[DBPanel_Bottom]
+Coordinates=163,454,47,51
+
+[DBPanel_Top]
+Coordinates=228,454,47,51
 

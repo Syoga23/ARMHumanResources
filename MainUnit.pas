@@ -12,7 +12,7 @@ uses
   Vcl.Bind.DBEngExt, Data.Bind.Components, Vcl.Mask, VclTee.TeeGDIPlus,
   VCLTee.TeEngine, Vcl.Imaging.jpeg, VCLTee.TeeProcs, VCLTee.Chart, Vcl.Buttons,
   sSpeedButton, Vcl.CategoryButtons, Vcl.ColorGrd, Vcl.WinXCalendars,
-  Vcl.Samples.Calendar, Vcl.ActnMan, Vcl.ActnColorMaps, CalendarSyoga,
+  Vcl.Samples.Calendar, Vcl.ActnMan, Vcl.ActnColorMaps,
   Vcl.ExtDlgs;
 
   type
@@ -46,8 +46,8 @@ uses
     Button7: TButton;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
-    Panel1: TPanel;
-    Panel2: TPanel;
+    DBPanel_Bottom: TPanel;
+    DBPanel_Top: TPanel;
     DBImage1: TDBImage;
     PageControl1: TPageControl;
     CompanySettings: TTabSheet;
@@ -69,26 +69,31 @@ uses
     DB_EditPhone: TDBLabeledEdit;
     DB_EditEmail: TDBLabeledEdit;
     DB_EditHired: TDBLabeledEdit;
-    ListView1: TListView;
-    Splitter2: TSplitter;
     Chart1: TChart;
     DBLabeledEdit8: TDBLabeledEdit;
     ColorDialog1: TColorDialog;
-    ListView2: TListView;
     PhotoPanel: TPanel;
     DeleteImage: TButton;
     AddImage: TButton;
     OpenPictureDialog1: TOpenPictureDialog;
-    DBMemo1: TDBMemo;
-    DBLabeledEdit10: TDBLabeledEdit;
+    DBMemoAbout: TDBMemo;
+    DB_EditDepartment: TDBLabeledEdit;
     DB_PolLookup: TDBLookupComboBox;
     PolDBLabel: TLabel;
     CheckBox1: TCheckBox;
-    TreeView1: TTreeView;
     DBNavigator2: TDBNavigator;
-    DBLabeledEdit1: TDBLabeledEdit;
-    DBLabeledEdit2: TDBLabeledEdit;
-    GroupBox1: TGroupBox;
+    DB_EditJob: TDBLabeledEdit;
+    DB_EditBirthdate: TDBLabeledEdit;
+    GroupBoxMemo: TGroupBox;
+    DB_DepartmentsList: TDBLookupListBox;
+    bottomWorkerPanel: TPanel;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    BitBtn5: TBitBtn;
+    BitBtn6: TBitBtn;
+    DBcombobox: TComboBoxEx;
+    Button1: TButton;
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure SidebarTimerTimer(Sender: TObject);
@@ -97,9 +102,11 @@ uses
     procedure FormResize(Sender: TObject);
     procedure RealTimeTimerTimer(Sender: TObject);
     procedure SidebarButtonClicked(Sender: TObject; Index: Integer);
-    procedure DBTablesBoxChange(Sender: TObject);
     procedure DeleteImageClick(Sender: TObject);
     procedure AddImageClick(Sender: TObject);
+    procedure DBcomboboxChange(Sender: TObject);
+    procedure DB_EditBirthdateExit(Sender: TObject);
+    procedure DB_EditHiredExit(Sender: TObject);
   private
     Sidebarstate: boolean;
     MaxWidth:integer;
@@ -117,12 +124,30 @@ uses
 var
   MainForm: TMainForm;
   closeVar: integer;
+  DateValue: TDateTime;
 
 implementation
 
 {$R *.dfm}
 
 uses BGunit, ConnectUnit, Math;
+
+procedure EditDateConvertOnExit(Edit: TDBLabeledEdit);
+  var FormatSettings: TFormatSettings;
+begin
+  FormatSettings.DateSeparator := '-';
+  FormatSettings.ShortDateFormat := 'yyyy-mm-dd';
+  Trim(Edit.Text);
+    if (Edit.Text = '')
+      then exit;
+    if TryStrToDate(Edit.Text, DateValue, FormatSettings)
+      then exit;
+    if TryStrToDate(Edit.Text ,DateValue, TFormatSettings.Create('ru-RU'))
+      then begin
+      Edit.Text := FormatDateTime('yyyy-mm-dd', DateValue)
+      end
+    else ShowMessage('Неверный формат даты. Введите дату в формате dd.mm.yyyy или yyyy.mm.dd.');
+end;
 
 procedure TCalendar.DrawCell(ACol, ARow: Longint; ARect: TRect;
   AState: TGridDrawState);
@@ -262,14 +287,24 @@ begin
   end;
 end;
 
-procedure TMainForm.DBTablesBoxChange(Sender: TObject);
-begin
 
+
+procedure TMainForm.DBcomboboxChange(Sender: TObject);
+begin
 BackData.RefReviewer.Close;
-BackData.RefReviewer.SQL.Text	:= 'SELECT * FROM ' + BackData.TableNames[0];
+BackData.RefReviewer.SQL.Text	:= 'SELECT * FROM ' + BackData.SQLTables[DBCombobox.ItemIndex];
 BackData.RefReviewer.Open;
 DBGridAdapt();
+end;
 
+procedure TMainForm.DB_EditBirthdateExit(Sender: TObject);
+begin
+  EditDateConvertOnExit(MainForm.DB_EditBirthdate);
+end;
+
+procedure TMainForm.DB_EditHiredExit(Sender: TObject);
+begin
+  EditDateConvertOnExit(MainForm.DB_EditHired);
 end;
 
 //============================================================================
@@ -284,8 +319,6 @@ begin
   resizecomponents();
   PagesControl.ActivePage:= DashboardPage;
   statusbar1.Panels.Items[0].Text:= PagesControl.ActivePage.Name;
-
-
 end;
 
 //============================================================================
@@ -298,6 +331,7 @@ begin
 end;
 
 procedure TMainForm.FormShow(Sender: TObject);
+  var i:integer;
 begin
 
  ConnectForm:= TConnectForm.Create(Self);
@@ -305,9 +339,18 @@ begin
  closeVar:=ConnectForm.closeVar;
  if(closeVar = 0) then Application.Terminate;
 
- BackData.RefReviewer.SQL.Text	:= 'SELECT * FROM ' + BackData.TableNames[0];
+ BackData.RefReviewer.SQL.Text	:= 'SELECT * FROM ' + BackData.SQLTables[0];
  BackData.RefReviewer.Active:= True;
+
+ for i := 0 to 9 do
+  begin
+    DBcombobox.Items.Add(BackData.TableNames[i]);
+  end;
+  DBcombobox.ItemIndex:= 0;
+
  DBGridAdapt();
+
+
 end;
 
 procedure TMainForm.RealTimeTimerTimer(Sender: TObject);
@@ -326,7 +369,6 @@ begin
   if (Sidebarstate = true)and(Sidebar.Width > MaxWidth)
     then Sidebar.Width := MaxWidth;
 
-
   if (Sidebarstate = false)and(Sidebar.Width > MinWidth)
     then Sidebar.Width:=Sidebar.Width - 30;
   if (Sidebarstate = false)and(Sidebar.Width < MinWidth)
@@ -334,6 +376,7 @@ begin
     Sidebar.Width := MinWidth;
     sidebartimer.Enabled:= false;
     end;
+
 end;
 
 end.

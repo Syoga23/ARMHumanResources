@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.dfm" source-language="ru-RU" target-language="ru-RU" datatype="delphiform" tool="ETM v10.0" ts="C:\Users\Syoga\Desktop\(Current)АРМ отдела кадров стройфирмы\BGunit.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">45521.5080092593</prop>
+        <prop prop-type="OrigDateTime">45519.6816898148</prop>
+        <prop prop-type="XlatDateTime">45519.6816898148</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">276</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:BackData.OnCreate" resname="O:BackData.OnCreate">
+        <source>DataModuleCreate</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TBackData</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.Height" resname="O:BackData.Height">
+        <source>397</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TBackData</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.Width" resname="O:BackData.Width">
+        <source>1098</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TBackData</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.Connected" resname="O:BackData.O:Connection.Connected">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.ConnectionString" resname="O:BackData.O:Connection.ConnectionString">
+        <source>'Provider=SQLOLEDB.1;Password=Head200360;Persist Security Info=True;User ID=Admin238;Initial Catalog=HumanResources;Data Source=SERGEIPC\SQLSERVER2008'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.LoginPrompt" resname="O:BackData.O:Connection.LoginPrompt">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.Provider" resname="O:BackData.O:Connection.Provider">
+        <source>'SQLOLEDB.1'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.OnConnectComplete" resname="O:BackData.O:Connection.OnConnectComplete">
+        <source>ConnectionConnectComplete</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.Left" resname="O:BackData.O:Connection.Left">
+        <source>112</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:Connection.Top" resname="O:BackData.O:Connection.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TADOConnection</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.Left" resname="O:BackData.O:MainMenu.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TMainMenu</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.Top" resname="O:BackData.O:MainMenu.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TMainMenu</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.Caption" resname="O:BackData.O:MainMenu.O:N5.Caption">
+        <source>'&amp;Отчет'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N2.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N2.Caption">
+        <source>'&amp;Новый '</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N8.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N8.Caption">
+        <source>'&amp;Открыть'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N9.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N9.Caption">
+        <source>'&amp;Сохранить'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N10.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N10.Caption">
+        <source>'Сохранить &amp;Как'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N11.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N11.Caption">
+        <source>'-'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N12.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N12.Caption">
+        <source>'&amp;Печать'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N5.O:N13.Caption" resname="O:BackData.O:MainMenu.O:N5.O:N13.Caption">
+        <source>'С&amp;войства печати...'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.Caption" resname="O:BackData.O:MainMenu.O:N3.Caption">
+        <source>'&amp;Работники'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N20.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N20.Caption">
+        <source>'Действия'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N20.O:N22.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N20.O:N22.Caption">
+        <source>'Нанять'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N20.O:N23.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N20.O:N23.Caption">
+        <source>'Перевести'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N20.O:N24.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N20.O:N24.Caption">
+        <source>'Уволить'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N20.O:N25.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N20.O:N25.Caption">
+        <source>'Повысить'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N19.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N19.Caption">
+        <source>'-'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N21.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N21.Caption">
+        <source>'&amp;Особые дни'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N21.O:N6.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N21.O:N6.Caption">
+        <source>'&amp;Зарплаты'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N21.O:N14.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N21.O:N14.Caption">
+        <source>'&amp;Выходные'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N21.O:N18.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N21.O:N18.Caption">
+        <source>'&amp;Больничные'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N7.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N7.Caption">
+        <source>'&amp;Праздники'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N16.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N16.Caption">
+        <source>'-'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N17.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N17.Caption">
+        <source>'&amp;Отделы'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N3.O:N15.Caption" resname="O:BackData.O:MainMenu.O:N3.O:N15.Caption">
+        <source>'&amp;История работника...'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N4.Caption" resname="O:BackData.O:MainMenu.O:N4.Caption">
+        <source>'Календарь'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:N1.Caption" resname="O:BackData.O:MainMenu.O:N1.Caption">
+        <source>'Настройки'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MainMenu.O:j1.Caption" resname="O:BackData.O:MainMenu.O:j1.Caption">
+        <source>'О нас'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TMenuItem</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.Active" resname="O:BackData.O:EmployeesSQL.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.Connection" resname="O:BackData.O:EmployeesSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.CursorType" resname="O:BackData.O:EmployeesSQL.CursorType">
+        <source>ctStatic</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.Parameters" resname="O:BackData.O:EmployeesSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.SQL.Strings[0]" resname="O:BackData.O:EmployeesSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM EMPLOYEES'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.Left" resname="O:BackData.O:EmployeesSQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.Top" resname="O:BackData.O:EmployeesSQL.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLemployee_id.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLemployee_id.FieldName">
+        <source>'employee_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLemployee_id.ReadOnly" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLemployee_id.ReadOnly">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLfirst_name.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLfirst_name.FieldName">
+        <source>'first_name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLfirst_name.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLfirst_name.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLlast_name.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLlast_name.FieldName">
+        <source>'last_name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLlast_name.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLlast_name.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLOtchestvo.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLOtchestvo.FieldName">
+        <source>'Otchestvo'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLOtchestvo.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLOtchestvo.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLbirthdate.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLbirthdate.FieldName">
+        <source>'birthdate'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLbirthdate.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLbirthdate.Size">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLemail.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLemail.FieldName">
+        <source>'email'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLemail.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLemail.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLphoto.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLphoto.FieldName">
+        <source>'photo'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TBlobField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLphone_number.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLphone_number.FieldName">
+        <source>'phone_number'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLHired_date.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLHired_date.FieldName">
+        <source>'Hired_date'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLHired_date.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLHired_date.Size">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLTerminated_date.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLTerminated_date.FieldName">
+        <source>'Terminated_date'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLTerminated_date.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLTerminated_date.Size">
+        <source>10</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLTermination_reason.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLTermination_reason.FieldName">
+        <source>'Termination_reason'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLTermination_reason.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLTermination_reason.Size">
+        <source>250</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLjob_id.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLjob_id.FieldName">
+        <source>'job_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLdepartment_id.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLdepartment_id.FieldName">
+        <source>'department_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLabout.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLabout.FieldName">
+        <source>'about'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLabout.Size" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLabout.Size">
+        <source>250</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_id.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_id.FieldName">
+        <source>'Pol_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.FieldKind" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.FieldKind">
+        <source>fkLookup</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.FieldName">
+        <source>'Pol_Nazv'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">71</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupDataSet" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupDataSet">
+        <source>PolSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">72</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupKeyFields" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupKeyFields">
+        <source>'Pol_ID'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">73</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupResultField" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.LookupResultField">
+        <source>'Pol_Name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">74</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.KeyFields" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.KeyFields">
+        <source>'Pol_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">75</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.Lookup" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLPol_Nazv.Lookup">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">76</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.FieldKind" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.FieldKind">
+        <source>fkLookup</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">77</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.FieldName" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.FieldName">
+        <source>'Department_Nazv'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">78</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupDataSet" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupDataSet">
+        <source>DepartmentSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">79</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupKeyFields" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupKeyFields">
+        <source>'department_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">80</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupResultField" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.LookupResultField">
+        <source>'department_name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">81</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.KeyFields" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.KeyFields">
+        <source>'department_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">82</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.Lookup" resname="O:BackData.O:EmployeesSQL.O:EmployeesSQLDepartment_Nazv.Lookup">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">83</prop><prop prop-type="Type">TStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.Active" resname="O:BackData.O:DepartmentSQL.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">84</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.Connection" resname="O:BackData.O:DepartmentSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">85</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.CursorType" resname="O:BackData.O:DepartmentSQL.CursorType">
+        <source>ctStatic</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">86</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.Parameters" resname="O:BackData.O:DepartmentSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">87</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.SQL.Strings[0]" resname="O:BackData.O:DepartmentSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM Departments'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">88</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.Left" resname="O:BackData.O:DepartmentSQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">89</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.Top" resname="O:BackData.O:DepartmentSQL.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">90</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_id.FieldName" resname="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_id.FieldName">
+        <source>'department_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">91</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_id.ReadOnly" resname="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_id.ReadOnly">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">92</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_name.FieldName" resname="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_name.FieldName">
+        <source>'department_name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">93</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_name.Size" resname="O:BackData.O:DepartmentSQL.O:DepartmentSQLdepartment_name.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">94</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSQL.O:DepartmentSQLlocation_id.FieldName" resname="O:BackData.O:DepartmentSQL.O:DepartmentSQLlocation_id.FieldName">
+        <source>'location_id'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">95</prop><prop prop-type="Type">TIntegerField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSQL.Connection" resname="O:BackData.O:LocationsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">96</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSQL.Parameters" resname="O:BackData.O:LocationsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">97</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSQL.SQL.Strings[0]" resname="O:BackData.O:LocationsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">98</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSQL.Left" resname="O:BackData.O:LocationsSQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">99</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSQL.Top" resname="O:BackData.O:LocationsSQL.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">100</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySQL.Connection" resname="O:BackData.O:CountrySQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">101</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySQL.Parameters" resname="O:BackData.O:CountrySQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">102</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySQL.SQL.Strings[0]" resname="O:BackData.O:CountrySQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">103</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySQL.Left" resname="O:BackData.O:CountrySQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">104</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySQL.Top" resname="O:BackData.O:CountrySQL.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">105</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSQL.Connection" resname="O:BackData.O:RegionsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">106</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSQL.Parameters" resname="O:BackData.O:RegionsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">107</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSQL.SQL.Strings[0]" resname="O:BackData.O:RegionsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">108</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSQL.Left" resname="O:BackData.O:RegionsSQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">109</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSQL.Top" resname="O:BackData.O:RegionsSQL.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">110</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSQL.Connection" resname="O:BackData.O:PassportSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">111</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSQL.Parameters" resname="O:BackData.O:PassportSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">112</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSQL.SQL.Strings[0]" resname="O:BackData.O:PassportSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">113</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSQL.Left" resname="O:BackData.O:PassportSQL.Left">
+        <source>208</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">114</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSQL.Top" resname="O:BackData.O:PassportSQL.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">115</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySQL.Connection" resname="O:BackData.O:JobHistorySQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">116</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySQL.Parameters" resname="O:BackData.O:JobHistorySQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">117</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySQL.SQL.Strings[0]" resname="O:BackData.O:JobHistorySQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">118</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySQL.Left" resname="O:BackData.O:JobHistorySQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">119</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySQL.Top" resname="O:BackData.O:JobHistorySQL.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">120</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSQL.Connection" resname="O:BackData.O:JobsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">121</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSQL.Parameters" resname="O:BackData.O:JobsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">122</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSQL.SQL.Strings[0]" resname="O:BackData.O:JobsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">123</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSQL.Left" resname="O:BackData.O:JobsSQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">124</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSQL.Top" resname="O:BackData.O:JobsSQL.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">125</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSQL.Connection" resname="O:BackData.O:SalariesSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">126</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSQL.Parameters" resname="O:BackData.O:SalariesSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">127</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSQL.SQL.Strings[0]" resname="O:BackData.O:SalariesSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">128</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSQL.Left" resname="O:BackData.O:SalariesSQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">129</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSQL.Top" resname="O:BackData.O:SalariesSQL.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">130</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSQL.Connection" resname="O:BackData.O:MilitaryServiceSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">131</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSQL.Parameters" resname="O:BackData.O:MilitaryServiceSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">132</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSQL.SQL.Strings[0]" resname="O:BackData.O:MilitaryServiceSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">133</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSQL.Left" resname="O:BackData.O:MilitaryServiceSQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">134</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSQL.Top" resname="O:BackData.O:MilitaryServiceSQL.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">135</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSQL.Connection" resname="O:BackData.O:MilitaryRanksSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">136</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSQL.Parameters" resname="O:BackData.O:MilitaryRanksSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">137</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSQL.SQL.Strings[0]" resname="O:BackData.O:MilitaryRanksSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">138</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSQL.Left" resname="O:BackData.O:MilitaryRanksSQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">139</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSQL.Top" resname="O:BackData.O:MilitaryRanksSQL.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">140</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSQL.Connection" resname="O:BackData.O:CategoryReserveSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">141</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSQL.Parameters" resname="O:BackData.O:CategoryReserveSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">142</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSQL.SQL.Strings[0]" resname="O:BackData.O:CategoryReserveSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">143</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSQL.Left" resname="O:BackData.O:CategoryReserveSQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">144</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSQL.Top" resname="O:BackData.O:CategoryReserveSQL.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">145</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSrc.DataSet" resname="O:BackData.O:EmployeesSrc.DataSet">
+        <source>EmployeesSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">146</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSrc.OnDataChange" resname="O:BackData.O:EmployeesSrc.OnDataChange">
+        <source>EmployeesSrcDataChange</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">147</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSrc.Left" resname="O:BackData.O:EmployeesSrc.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">148</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EmployeesSrc.Top" resname="O:BackData.O:EmployeesSrc.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">149</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSRC.DataSet" resname="O:BackData.O:DepartmentSRC.DataSet">
+        <source>DepartmentSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">150</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSRC.Left" resname="O:BackData.O:DepartmentSRC.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">151</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DepartmentSRC.Top" resname="O:BackData.O:DepartmentSRC.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">152</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSRC.DataSet" resname="O:BackData.O:LocationsSRC.DataSet">
+        <source>LocationsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">153</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSRC.Left" resname="O:BackData.O:LocationsSRC.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">154</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:LocationsSRC.Top" resname="O:BackData.O:LocationsSRC.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">155</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySRC.DataSet" resname="O:BackData.O:CountrySRC.DataSet">
+        <source>CountrySQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">156</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySRC.Left" resname="O:BackData.O:CountrySRC.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">157</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CountrySRC.Top" resname="O:BackData.O:CountrySRC.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">158</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSRC.DataSet" resname="O:BackData.O:RegionsSRC.DataSet">
+        <source>RegionsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">159</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSRC.Left" resname="O:BackData.O:RegionsSRC.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">160</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RegionsSRC.Top" resname="O:BackData.O:RegionsSRC.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">161</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSRC.DataSet" resname="O:BackData.O:PassportSRC.DataSet">
+        <source>PassportSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">162</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSRC.Left" resname="O:BackData.O:PassportSRC.Left">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">163</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PassportSRC.Top" resname="O:BackData.O:PassportSRC.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">164</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySRC.DataSet" resname="O:BackData.O:JobHistorySRC.DataSet">
+        <source>JobHistorySQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">165</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySRC.Left" resname="O:BackData.O:JobHistorySRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">166</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobHistorySRC.Top" resname="O:BackData.O:JobHistorySRC.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">167</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSRC.DataSet" resname="O:BackData.O:JobsSRC.DataSet">
+        <source>JobsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">168</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSRC.Left" resname="O:BackData.O:JobsSRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">169</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:JobsSRC.Top" resname="O:BackData.O:JobsSRC.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">170</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSRC.DataSet" resname="O:BackData.O:SalariesSRC.DataSet">
+        <source>SalariesSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">171</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSRC.Left" resname="O:BackData.O:SalariesSRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">172</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SalariesSRC.Top" resname="O:BackData.O:SalariesSRC.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">173</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSRC.DataSet" resname="O:BackData.O:MilitaryServiceSRC.DataSet">
+        <source>MilitaryServiceSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">174</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSRC.Left" resname="O:BackData.O:MilitaryServiceSRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">175</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryServiceSRC.Top" resname="O:BackData.O:MilitaryServiceSRC.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">176</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSRC.DataSet" resname="O:BackData.O:MilitaryRanksSRC.DataSet">
+        <source>MilitaryRanksSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">177</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSRC.Left" resname="O:BackData.O:MilitaryRanksSRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">178</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MilitaryRanksSRC.Top" resname="O:BackData.O:MilitaryRanksSRC.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">179</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSRC.DataSet" resname="O:BackData.O:CategoryReserveSRC.DataSet">
+        <source>CategoryReserveSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">180</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSRC.Left" resname="O:BackData.O:CategoryReserveSRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">181</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CategoryReserveSRC.Top" resname="O:BackData.O:CategoryReserveSRC.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">182</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySQL.Connection" resname="O:BackData.O:FamilySQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">183</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySQL.Parameters" resname="O:BackData.O:FamilySQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">184</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySQL.SQL.Strings[0]" resname="O:BackData.O:FamilySQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">185</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySQL.Left" resname="O:BackData.O:FamilySQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">186</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySQL.Top" resname="O:BackData.O:FamilySQL.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">187</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySRC.DataSet" resname="O:BackData.O:FamilySRC.DataSet">
+        <source>FamilySQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">188</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySRC.Left" resname="O:BackData.O:FamilySRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">189</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:FamilySRC.Top" resname="O:BackData.O:FamilySRC.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">190</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewer.Connection" resname="O:BackData.O:RefReviewer.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">191</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewer.Parameters" resname="O:BackData.O:RefReviewer.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">192</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewer.Left" resname="O:BackData.O:RefReviewer.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">193</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewer.Top" resname="O:BackData.O:RefReviewer.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">194</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewerSRC.DataSet" resname="O:BackData.O:RefReviewerSRC.DataSet">
+        <source>RefReviewer</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">195</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewerSRC.Left" resname="O:BackData.O:RefReviewerSRC.Left">
+        <source>112</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">196</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RefReviewerSRC.Top" resname="O:BackData.O:RefReviewerSRC.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">197</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySQL.Connection" resname="O:BackData.O:CompanySQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">198</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySQL.DataSource" resname="O:BackData.O:CompanySQL.DataSource">
+        <source>EmployeesSrc</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">199</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySQL.Parameters" resname="O:BackData.O:CompanySQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">200</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySQL.Left" resname="O:BackData.O:CompanySQL.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">201</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySQL.Top" resname="O:BackData.O:CompanySQL.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">202</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySRC.DataSet" resname="O:BackData.O:CompanySRC.DataSet">
+        <source>CompanySQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">203</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySRC.Left" resname="O:BackData.O:CompanySRC.Left">
+        <source>112</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">204</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:CompanySRC.Top" resname="O:BackData.O:CompanySRC.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">205</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSQL.Connection" resname="O:BackData.O:RelationsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">206</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSQL.Parameters" resname="O:BackData.O:RelationsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">207</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSQL.SQL.Strings[0]" resname="O:BackData.O:RelationsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">208</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSQL.Left" resname="O:BackData.O:RelationsSQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">209</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSQL.Top" resname="O:BackData.O:RelationsSQL.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">210</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSRC.DataSet" resname="O:BackData.O:RelationsSRC.DataSet">
+        <source>RelationsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">211</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSRC.Left" resname="O:BackData.O:RelationsSRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">212</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:RelationsSRC.Top" resname="O:BackData.O:RelationsSRC.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">213</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSQL.Connection" resname="O:BackData.O:MarrStatusSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">214</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSQL.Parameters" resname="O:BackData.O:MarrStatusSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">215</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSQL.SQL.Strings[0]" resname="O:BackData.O:MarrStatusSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">216</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSQL.Left" resname="O:BackData.O:MarrStatusSQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">217</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSQL.Top" resname="O:BackData.O:MarrStatusSQL.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">218</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSRC.DataSet" resname="O:BackData.O:MarrStatusSRC.DataSet">
+        <source>MarrStatusSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">219</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSRC.Left" resname="O:BackData.O:MarrStatusSRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">220</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:MarrStatusSRC.Top" resname="O:BackData.O:MarrStatusSRC.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">221</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSQL.Connection" resname="O:BackData.O:VacationsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">222</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSQL.Parameters" resname="O:BackData.O:VacationsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">223</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSQL.SQL.Strings[0]" resname="O:BackData.O:VacationsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">224</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSQL.Left" resname="O:BackData.O:VacationsSQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">225</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSQL.Top" resname="O:BackData.O:VacationsSQL.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">226</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSRC.DataSet" resname="O:BackData.O:VacationsSRC.DataSet">
+        <source>VacationsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">227</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSRC.Left" resname="O:BackData.O:VacationsSRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">228</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:VacationsSRC.Top" resname="O:BackData.O:VacationsSRC.Top">
+        <source>240</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">229</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSQL.Connection" resname="O:BackData.O:WorkCalendarSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">230</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSQL.Parameters" resname="O:BackData.O:WorkCalendarSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">231</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSQL.SQL.Strings[0]" resname="O:BackData.O:WorkCalendarSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">232</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSQL.Left" resname="O:BackData.O:WorkCalendarSQL.Left">
+        <source>608</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">233</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSQL.Top" resname="O:BackData.O:WorkCalendarSQL.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">234</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSRC.DataSet" resname="O:BackData.O:WorkCalendarSRC.DataSet">
+        <source>WorkCalendarSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">235</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSRC.Left" resname="O:BackData.O:WorkCalendarSRC.Left">
+        <source>720</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">236</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:WorkCalendarSRC.Top" resname="O:BackData.O:WorkCalendarSRC.Top">
+        <source>296</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">237</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSQL.Connection" resname="O:BackData.O:DayTypeSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">238</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSQL.Parameters" resname="O:BackData.O:DayTypeSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">239</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSQL.SQL.Strings[0]" resname="O:BackData.O:DayTypeSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">240</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSQL.Left" resname="O:BackData.O:DayTypeSQL.Left">
+        <source>816</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">241</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSQL.Top" resname="O:BackData.O:DayTypeSQL.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">242</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSRC.DataSet" resname="O:BackData.O:DayTypeSRC.DataSet">
+        <source>DayTypeSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">243</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSRC.Left" resname="O:BackData.O:DayTypeSRC.Left">
+        <source>928</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">244</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:DayTypeSRC.Top" resname="O:BackData.O:DayTypeSRC.Top">
+        <source>72</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">245</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSQL.Connection" resname="O:BackData.O:EventsSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">246</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSQL.Parameters" resname="O:BackData.O:EventsSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">247</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSQL.SQL.Strings[0]" resname="O:BackData.O:EventsSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">248</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSQL.Left" resname="O:BackData.O:EventsSQL.Left">
+        <source>816</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">249</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSQL.Top" resname="O:BackData.O:EventsSQL.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">250</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSRC.DataSet" resname="O:BackData.O:EventsSRC.DataSet">
+        <source>EventsSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">251</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSRC.Left" resname="O:BackData.O:EventsSRC.Left">
+        <source>928</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">252</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:EventsSRC.Top" resname="O:BackData.O:EventsSRC.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">253</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSQL.Connection" resname="O:BackData.O:SickDaysSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">254</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSQL.Parameters" resname="O:BackData.O:SickDaysSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">255</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSQL.SQL.Strings[0]" resname="O:BackData.O:SickDaysSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">256</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSQL.Left" resname="O:BackData.O:SickDaysSQL.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">257</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSQL.Top" resname="O:BackData.O:SickDaysSQL.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">258</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSRC.DataSet" resname="O:BackData.O:SickDaysSRC.DataSet">
+        <source>SickDaysSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">259</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSRC.Left" resname="O:BackData.O:SickDaysSRC.Left">
+        <source>504</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">260</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:SickDaysSRC.Top" resname="O:BackData.O:SickDaysSRC.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">261</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.Active" resname="O:BackData.O:PolSQL.Active">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">262</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.Connection" resname="O:BackData.O:PolSQL.Connection">
+        <source>Connection</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">263</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.CursorType" resname="O:BackData.O:PolSQL.CursorType">
+        <source>ctStatic</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">264</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.Parameters" resname="O:BackData.O:PolSQL.Parameters">
+        <source>&lt;&gt;</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">265</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.SQL.Strings[0]" resname="O:BackData.O:PolSQL.SQL.Strings[0]">
+        <source>'SELECT * FROM Pol '</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">266</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.Left" resname="O:BackData.O:PolSQL.Left">
+        <source>816</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">267</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.Top" resname="O:BackData.O:PolSQL.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">268</prop><prop prop-type="Type">TADOQuery</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.O:PolSQLPol_ID.FieldName" resname="O:BackData.O:PolSQL.O:PolSQLPol_ID.FieldName">
+        <source>'Pol_ID'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">269</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.O:PolSQLPol_ID.ReadOnly" resname="O:BackData.O:PolSQL.O:PolSQLPol_ID.ReadOnly">
+        <source>True</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">270</prop><prop prop-type="Type">TAutoIncField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.O:PolSQLPol_Name.FieldName" resname="O:BackData.O:PolSQL.O:PolSQLPol_Name.FieldName">
+        <source>'Pol_Name'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">271</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSQL.O:PolSQLPol_Name.Size" resname="O:BackData.O:PolSQL.O:PolSQLPol_Name.Size">
+        <source>100</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">272</prop><prop prop-type="Type">TWideStringField</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSRC.DataSet" resname="O:BackData.O:PolSRC.DataSet">
+        <source>PolSQL</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">273</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSRC.Left" resname="O:BackData.O:PolSRC.Left">
+        <source>928</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">274</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:BackData.O:PolSRC.Top" resname="O:BackData.O:PolSRC.Top">
+        <source>128</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">45521.5080300347</prop><prop prop-type="Status">0</prop><prop prop-type="Order">275</prop><prop prop-type="Type">TDataSource</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

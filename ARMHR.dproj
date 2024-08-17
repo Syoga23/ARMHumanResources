@@ -144,6 +144,20 @@
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
                 </Excluded_Packages>
+                <Language>
+                    <Language Name="ProjectLang">$00000419</Language>
+                    <Language Name="ActiveLang">RUS</Language>
+                </Language>
+                <Resource_DLL_Projects>
+                    <Resource_DLL_Projects Name="Item0">Английский (США)*$00000409*ENU*ENU</Resource_DLL_Projects>
+                    <Resource_DLL_Projects Name="Item1">Русский (Россия)*$00000419*RUS*RUS</Resource_DLL_Projects>
+                </Resource_DLL_Projects>
+                <RDP_Source_Files>
+                    <RDP_Source_Files Name="Item0">ConnectUnit.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item1">BGunit.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item2">MainUnit.dfm</RDP_Source_Files>
+                    <RDP_Source_Files Name="Item3">Win32\Debug\ARMHR.drc</RDP_Source_Files>
+                </RDP_Source_Files>
             </Delphi.Personality>
             <Deployment Version="4">
                 <DeployFile LocalName="..\..\Downloads\Logo150px (1).png" Configuration="Debug" Class="UWP_DelphiLogo150">
